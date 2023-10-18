@@ -4,7 +4,7 @@ print("Olá "+nome) // Imprime o valor de Ricardo
 
 for index in 5 {   // Inicia a variavel "index" com o valor 0 
     for j in 2 {
-        print(nome+" Contagem "+j+1);
+        print(nome+" Contagem "+j+1); // Imprime o "nome" e a contagem de "j"
     };
-    print("Finished: " + (index+1) +" From: " +5);
+    print("Finished: " + (index+1) +" From: " +5); // Imprime o valor para cada iteração de "index"
 }
