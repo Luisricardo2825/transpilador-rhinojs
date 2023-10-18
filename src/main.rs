@@ -47,9 +47,16 @@ pub enum Verb {
 }
 
 #[derive(PartialEq, Debug, Clone)]
+pub enum Keywords {
+    For { body: Box<Vec<Expr>> },
+}
+#[derive(PartialEq, Debug, Clone)]
 pub enum Expr {
+    Print(Box<Expr>),
+    Keywords(Keywords),
     Terms(Vec<Expr>),
     IsGlobal {
+        context: String,
         modifier: String,
         ident: String,
         expr: Box<Expr>,
@@ -105,6 +112,59 @@ pub fn parse_expr(pairs: Pairs<Rule>, var_pool: &mut Vec<Variable>) -> Expr {
 
 fn resolve_rule(primary: pest::iterators::Pair<'_, Rule>, var_pool: &mut Vec<Variable>) -> Expr {
     match primary.as_rule() {
+        Rule::functions => {
+            let mut keyword = primary.into_inner();
+            let keyword = keyword.next().unwrap();
+            resolve_rule(keyword, var_pool)
+        }
+        Rule::print => {
+            let mut pair = primary.into_inner();
+            let expr = pair.next().unwrap();
+            let expr = resolve_rule(expr, var_pool);
+            Expr::Print(Box::new(expr))
+        }
+        Rule::keywords => {
+            let mut keyword = primary.into_inner();
+            let keyword = keyword.next().unwrap();
+            resolve_rule(keyword, var_pool)
+        }
+        Rule::forLoop => {
+            let mut pair = primary.into_inner();
+            let stmt = pair.next().unwrap().as_str();
+            if stmt.trim() != "for" {
+                panic!("Expected for loop");
+            }
+            let ident = pair.next().unwrap();
+            let ident = ident.as_str();
+            let expr = pair.next().unwrap();
+            let expr = resolve_rule(expr, var_pool);
+
+            let mut terms = vec![];
+            let change_pool: Vec<Variable> = var_pool
+                .into_iter()
+                .map(|x| {
+                    x.is_const = false;
+                    x.value = Expr::Primitives(eval(x.value.to_owned()));
+                    x.to_owned()
+                })
+                .collect();
+            // println!("{:?}", change_pool);
+            for i in 0..eval(expr).to_integer() {
+                let mut var_pool: Vec<Variable> = vec![];
+                var_pool.append(&mut change_pool.to_owned());
+                let body = pair.to_owned().into_iter();
+
+                for ele in body {
+                    add_var(&mut var_pool, ident, "", &Expr::Number(i as f64));
+                    let body = resolve_rule(ele.to_owned(), &mut var_pool);
+                    terms.push(body);
+                }
+            }
+
+            Expr::Keywords(Keywords::For {
+                body: Box::new(terms),
+            })
+        }
         Rule::expr => parse_expr(primary.into_inner(), var_pool),
         Rule::number => Expr::Number(primary.as_str().trim().parse::<f64>().unwrap()),
         Rule::mathExpr => parse_expr(primary.into_inner(), var_pool),
@@ -140,53 +200,34 @@ fn resolve_rule(primary: pest::iterators::Pair<'_, Rule>, var_pool: &mut Vec<Var
         Rule::ident => {
             // get value from var_pool
             let ident = primary.as_str();
-            let ident = String::from(ident);
+            let ident = ident.trim();
+            let ident = ident.to_string();
             for ele in &mut *var_pool {
                 if ele.ident == ident {
                     return ele.value.to_owned();
                 }
             }
-            Expr::Primitives(Primitives::Null)
+            panic!("Could'nt find: \"{ident}\"")
         }
         Rule::assgmtExpr => {
             let mut pair = primary.into_inner();
-            let modifier = pair.next().unwrap();
+            let stmt = pair.next().unwrap().as_str();
+            if !["const", ""].contains(&stmt.trim()) {
+                panic!("Expected assignment");
+            }
             let ident = pair.next().unwrap();
 
             let expr = pair.next().unwrap();
 
             let expr = resolve_rule(expr, var_pool);
 
-            let modifier = modifier.as_str();
             let ident = ident.as_str();
-            let mut found = false;
-            // Check if var exists
-            for ele in var_pool.clone() {
-                if ele.ident == ident.to_string() {
-                    found = true;
-                    if ele.is_const {
-                        panic!("Cannot modify const variable");
-                    }
-                    break;
-                }
-            }
-            if found {
-                // Remove var
-                var_pool.retain(|ele| ele.ident != ident.to_string());
-            }
-            let value = Expr::IsGlobal {
-                modifier: String::from(modifier),
-                ident: String::from(ident),
-                expr: Box::new(expr.clone()),
-            };
-            // Insert var
-            var_pool.push(Variable {
-                value: value,
-                is_const: if modifier == "const" { true } else { false },
-                ident: ident.to_string(),
-            });
+
+            add_var(var_pool, ident, stmt, &expr);
+
             Expr::IsGlobal {
-                modifier: String::from(modifier),
+                context: String::from(context_id() + ident),
+                modifier: String::from(stmt),
                 ident: String::from(ident),
                 expr: Box::new(expr),
             }
@@ -222,6 +263,37 @@ fn resolve_rule(primary: pest::iterators::Pair<'_, Rule>, var_pool: &mut Vec<Var
         }
         rule => unreachable!("Expr::parse expected atom, found {:?}", rule),
     }
+}
+
+fn add_var(var_pool: &mut Vec<Variable>, ident: &str, modifier: &str, expr: &Expr) {
+    let mut found = false;
+    let ident = String::from(ident);
+    // Check if var exists
+    for ele in var_pool.clone() {
+        if ele.ident == ident.to_string() {
+            found = true;
+            if ele.is_const {
+                panic!("Cannot modify const variable");
+            }
+            break;
+        }
+    }
+    if found {
+        // Remove var
+        var_pool.retain(|ele| ele.ident != ident.to_string());
+    }
+    let value = Expr::IsGlobal {
+        context: String::from(context_id() + &ident),
+        modifier: String::from(modifier),
+        ident: String::from(&ident),
+        expr: Box::new(expr.clone()),
+    };
+    // Insert var
+    var_pool.push(Variable {
+        value: value,
+        is_const: if modifier == "const" { true } else { false },
+        ident,
+    });
 }
 
 fn parse_dyadic_verb(pair: pest::iterators::Pair<Rule>, lhs: Expr, rhs: Expr) -> Expr {
@@ -261,10 +333,7 @@ fn main() -> io::Result<()> {
 
         // println!("{str}");
         let exprs = parse_expr(pair.into_inner(), &mut var_pool);
-        // println!("{:?}", exprs);
-        let result = eval(exprs);
-
-        println!("{:?}", result.to_string());
+        eval(exprs);
     }
 
     Ok(())
@@ -286,9 +355,11 @@ pub enum Primitives {
     Array(Vec<Primitives>),
     Object(HashMap<String, Primitives>),
     Null,
+    Eof,
 }
 
 fn eval(expr: Expr) -> Primitives {
+    let mut var_pool: Vec<Variable> = vec![];
     match expr {
         Expr::Number(i) => Primitives::Number(i),
         Expr::UnaryMinus(e) => {
@@ -310,12 +381,17 @@ fn eval(expr: Expr) -> Primitives {
         Expr::String(value) => Primitives::String(value),
         Expr::Primitives(value) => value,
         Expr::IsGlobal {
-            modifier: _,
-            ident: _,
+            context,
+            modifier,
+            ident,
             expr,
         } => {
-            let value = eval(*expr);
-
+            let value = eval(*expr.clone());
+            var_pool.push(Variable {
+                ident: ident,
+                value: *expr,
+                is_const: false,
+            });
             value
         }
         Expr::MonadicOp { verb: _, expr: _ } => todo!(),
@@ -340,7 +416,26 @@ fn eval(expr: Expr) -> Primitives {
             Verb::Eq => todo!(),
             Verb::Neq => todo!(),
         },
-        Expr::Terms(_) => todo!(),
+        Expr::Terms(terms) => {
+            let mut arr = vec![];
+            for ele in terms {
+                arr.push(eval(ele));
+            }
+            return Primitives::Array(arr);
+        }
+        Expr::Keywords(keyword) => match keyword {
+            Keywords::For { body } => {
+                let terms = *body;
+                for ele in terms {
+                    eval(ele);
+                }
+                Primitives::Eof
+            }
+        },
+        Expr::Print(value) => {
+            println!("{}", eval(*value).to_string());
+            Primitives::Eof
+        }
     }
 }
 
@@ -352,7 +447,8 @@ impl Primitives {
             Primitives::Boolean(value) => value.to_string(),
             Primitives::Array(value) => serialize_jsonvalue(&Primitives::Array(value.to_owned())),
             Primitives::Object(value) => serialize_jsonvalue(&Primitives::Object(value.to_owned())),
-            Primitives::Null => "".to_owned(),
+            Primitives::Null => "null".to_owned(),
+            Primitives::Eof => "".to_owned(),
         }
     }
 
@@ -364,6 +460,7 @@ impl Primitives {
             Primitives::Array(value) => serialize_jsonvalue(&Primitives::Array(value.to_owned())),
             Primitives::Object(value) => serialize_jsonvalue(&Primitives::Object(value.to_owned())),
             Primitives::Null => "null".to_owned(),
+            Primitives::Eof => "".to_owned(),
         }
     }
 
@@ -435,6 +532,18 @@ impl Primitives {
             _ => false,
         }
     }
+    pub fn is_object(&self) -> bool {
+        match self {
+            Primitives::Object(_) => true,
+            _ => false,
+        }
+    }
+    pub fn is_eof(&self) -> bool {
+        match self {
+            Primitives::Eof => true,
+            _ => false,
+        }
+    }
 }
 
 fn serialize_jsonvalue(val: &Primitives) -> String {
@@ -456,5 +565,30 @@ fn serialize_jsonvalue(val: &Primitives) -> String {
         Number(n) => format!("{}", n),
         Boolean(b) => format!("{}", b),
         Null => format!("null"),
+        Eof => "".to_owned(),
     }
+}
+
+use std::collections::hash_map::DefaultHasher;
+use std::hash::{Hash, Hasher};
+
+fn hash<T>(obj: T) -> u64
+where
+    T: Hash,
+{
+    let mut hasher = DefaultHasher::new();
+    obj.hash(&mut hasher);
+    hasher.finish()
+}
+
+fn context_id() -> String {
+    use rand::{thread_rng, Rng};
+
+    use rand::distributions::Alphanumeric;
+    let rand_string: String = thread_rng()
+        .sample_iter(&Alphanumeric)
+        .take(30)
+        .map(char::from)
+        .collect();
+    rand_string
 }

@@ -1,16 +1,32 @@
-program = _{ SOI ~ NEWLINE* ~ (expr ~ ";"? ~ NEWLINE+)* ~ expr? ~ EOI }
+program = _{ SOI ~ code ~ EOI }
 
-// No whitespace allowed between digits
-
+code = _{ NEWLINE* ~ (expr ~ ";"? ~ NEWLINE+)* ~ expr? }
 // Expression(Generic)
 expr = {
-    assgmtExpr
+    keywords
+  | functions
+  | assgmtExpr
   | monadicExpr
   | dyadicExpr
   | value
   | terms
   | mathExpr
 }
+// Keywords
+keywords = {
+    forLoop
+}
+
+functions = {
+    print
+}
+
+stmt    = {
+    "const"
+  | "for"
+}
+print   = { "print" ~ "(" ~ expr ~ ")" }
+forLoop = { stmt ~ ident ~ "in" ~ expr ~ "{" ~ code ~ "}" }
 
 // expressions(Logic)
 monadicExpr = { verb ~ expr }
@@ -26,9 +42,8 @@ terms = { term+ }
 term = _{ ident | "(" ~ expr ~ ")" }
 
 // Variables
-modifier = { ("const" | "") }
 
-assgmtExpr = { modifier ~ ident ~ "=" ~ expr }
+assgmtExpr = { stmt ~ ident ~ "=" ~ expr }
 
 verb = {
     plus
@@ -105,3 +120,5 @@ array = {
 // program = _{ SOI ~ expr ~ EOI }
 
 WHITESPACE = _{ " " | "\t" }
+
+COMMENT = _{ "//" ~ (!"\n" ~ ANY)* }

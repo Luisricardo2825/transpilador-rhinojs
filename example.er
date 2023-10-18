@@ -1,4 +1,10 @@
-a = 2+(2*(2+4));
-b = "teste" + (a + a) + "" + a + "" + a;
-c = (-10 - 2 * 2 - (-10 - 2 * 2) + 5) + b;
-d = {c,a,b}
+const nome = "Ricardo" // Inicia a variavel com o valor Ricardo
+
+print("Olá "+nome) // Imprime o valor de Ricardo
+
+for index in 5 {   // Inicia a variavel "index" com o valor 0 
+    for j in 2 {
+        print(nome+" Contagem "+j+1);
+    };
+    print("Finished: " + (index+1) +" From: " +5);
+}
