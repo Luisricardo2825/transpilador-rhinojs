@@ -1,124 +1,24 @@
 program = _{ SOI ~ code ~ EOI }
 
-code = _{ NEWLINE* ~ (expr ~ ";"? ~ NEWLINE+)* ~ expr? }
+code = _{ NEWLINE* ~ ((import | directImport) ~ ";"? ~ NEWLINE+)* ~ (import | directImport)? ~ ";"? ~ rest }
 // Expression(Generic)
-expr = {
-    keywords
-  | functions
-  | assgmtExpr
-  | monadicExpr
-  | dyadicExpr
-  | value
-  | terms
-  | mathExpr
+directImport = { "import" ~ source }
+import       = { "import" ~ (defaultWithDestructuring | destructuring | rename | ident) ~ "from" ~ source }
+
+source = @{ "\"" ~ ("\\\"" | (!"\"" ~ ANY))* ~ "\"" }
+
+rename = { pastName ~ "as" ~ NEWLINE* ~ ident }
+
+pastName                 = _{ (ident | "*") }
+destructuring            =  {
+    "{" ~ NEWLINE* ~ "}"
+  | "{" ~ NEWLINE* ~ (rename | ident) ~ ("," ~ (rename | ident))* ~ NEWLINE* ~ "}"
 }
-// Keywords
-keywords = {
-    forLoop
-}
+defaultWithDestructuring =  { ident ~ "," ~ NEWLINE* ~ destructuring }
 
-functions = {
-    print
-}
+ident = @{ ASCII_ALPHA ~ (ASCII_ALPHANUMERIC | "_" | "$" | "@")* }
 
-stmt    = {
-    "const"
-  | "for"
-}
-print   = { "print" ~ "(" ~ expr ~ ")" }
-forLoop = { stmt ~ ident ~ "in" ~ expr ~ "{" ~ code ~ "}" }
-
-// expressions(Logic)
-monadicExpr = { verb ~ expr }
-
-dyadicExpr = { (monadicExpr | terms | number | string) ~ verb ~ expr }
-
-// Math expression
-mathExpr = { atom ~ (operators ~ atom)* }
-
-// Terms
-terms = { term+ }
-
-term = _{ ident | "(" ~ expr ~ ")" }
-
-// Variables
-
-assgmtExpr = { stmt ~ ident ~ "=" ~ expr }
-
-verb = {
-    plus
-  | increment
-  | decrement
-  | and
-  | or
-  | not
-  | lt
-  | lte
-  | gt
-  | gte
-  | eq
-  | neq
-}
-// operators
-plus      = { "+" }
-increment = { "++" }
-decrement = { "--" }
-
-// Logic operators
-and = { "and" | "&&" }
-or  = { "or" | "||" }
-not = { "!" }
-lt  = { "<" }
-lte = { "<=" }
-gt  = { ">" }
-gte = { ">=" }
-eq  = { "==" }
-neq = { "!=" | "<>" }
-// Math operators
-operators = _{ add | subtract | multiply | divide | modulo }
-add       =  { "+" }
-subtract  =  { "-" }
-multiply  =  { "*" }
-divide    =  { "/" }
-modulo    =  { "%" }
-
-// Indentificators
-ident = @{ ASCII_ALPHA ~ (ASCII_ALPHANUMERIC | "_")* }
-
-// value types
-value = { object | array | string | mathExpr | boolean | null | ident }
-
-// Simple
-
-boolean = { "true" | "false" }
-null    = { "null" }
-
-// Could be a negative or positive number
-number = { unary_minus? ~ numericChar }
-// "negate" a number
-unary_minus = { "-" }
-// Define char that match a number
-numericChar = @{ ("0" | ASCII_NONZERO_DIGIT ~ ASCII_DIGIT*) ~ ("." ~ ASCII_DIGIT*)? ~ (^"e" ~ ("+" | "-")? ~ ASCII_DIGIT+)? }
-
-primary = _{ number | "(" ~ expr ~ ")" }
-atom    = _{ unary_minus? ~ primary }
-
-string = @{ "\"" ~ ("\\\"" | (!"\"" ~ ANY))* ~ "\"" }
-// Complex types
-object = {
-    "{" ~ "}"
-  | "{" ~ pair ~ ("," ~ pair)* ~ "}"
-}
-pair   = { (ident ~ ":" ~ (expr) | ident) }
-
-array = {
-    "[" ~ "]"
-  | "[" ~ (expr) ~ ("," ~ (expr))* ~ "]"
-}
-
-// We can't have SOI and EOI on expr directly, because it is used recursively (e.g. with parentheses)
-// program = _{ SOI ~ expr ~ EOI }
-
+rest       =  { ANY* }
 WHITESPACE = _{ " " | "\t" }
 
 COMMENT = _{ "//" ~ (!"\n" ~ ANY)* }
