@@ -7,7 +7,5 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.4.8", features = ["derive"] }
-lazy_static = "1.4.0"
 pest = "2.7.4"
 pest_derive = "2.7.4"
-rand = "0.8.5"

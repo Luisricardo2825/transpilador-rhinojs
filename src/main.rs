@@ -1,10 +1,9 @@
+use clap::Parser as OtherParser;
 use pest::Parser;
 use std::{
     io::{self, Write},
     path::PathBuf,
 };
-
-use clap::Parser as OtherParser;
 
 /// Conversor de javascript
 #[derive(OtherParser, Debug)]
@@ -50,16 +49,33 @@ fn convert(mut path: PathBuf, out: String) -> Result<(), io::Error> {
     let unparsed_file = std::fs::read_to_string(path.clone()).expect("Erro reading file");
     let pairs = LangParser::parse(Rule::program, &unparsed_file).expect("Erro parsing");
     let mut code = vec![];
-    for pair in pairs {
+    let default_imports = vec![[
+        Values::String("System".to_owned()),
+        Values::String("java.lang.System".to_owned()),
+    ]];
+
+    for ele in default_imports {
+        let result = resolve(&ele[0], &ele[1].to_string()).to_string();
+
+        code.push(result + ";");
+    }
+    let size = pairs.len();
+    for (i, pair) in pairs.enumerate() {
         let str = pair.as_str();
         if str.len() <= 0 {
             continue;
         }
-
         let result = resolve_rule(pair);
 
-        code.push(result.to_string())
+        // End of file
+        if i < size - 1 {
+            code.push(result.to_string());
+            continue;
+        }
+
+        code.push(result.to_string() + ";");
     }
+
     let code = code.join("\n");
     path.set_extension("js");
     let file_name = path.file_name().unwrap().to_str().unwrap();
@@ -163,7 +179,10 @@ fn resolve_rule(primary: pest::iterators::Pair<'_, Rule>) -> Values {
                 Values::DefaultWithMutiple { .. } => todo!(),
             };
             let name = source.split(".").last().unwrap();
-            Values::String(format!("const {name} = Package.{source};"))
+            if source.trim().to_lowercase().starts_with("java.") {
+                return Values::String(format!("const {name} = {}", source));
+            }
+            Values::String(format!("const {name} = Packages.{source}"))
         }
         Rule::rest => Values::String(String::from(primary.as_str())),
         rule => unreachable!("Expr::parse expected atom, found {:?}", rule),
@@ -176,22 +195,40 @@ fn resolve(var: &Values, source: &String) -> String {
     }
     match var {
         Values::String(varname) => {
-            format!("const {} = Package.{}", varname, source)
+            if source.trim().to_lowercase().starts_with("java.") {
+                return format!("const {varname} = {source}");
+            }
+            format!("const {} = Packages.{}", varname, source)
         }
         Values::Mutiple(vars) => {
             let mut result = String::new();
             for (i, var) in vars.iter().enumerate() {
                 if var.is_rename() {
                     let (old, new) = var.to_rename();
-                    result.push_str(&format!("const {} = Package.{}.{}", new, source, old));
+                    if source.trim().to_lowercase().starts_with("java.") {
+                        result.push_str(&format!("const {new} = {source}.{old}"));
+                        continue;
+                    }
+                    result.push_str(&format!("const {new} = Packages.{source}.{old}"));
                     continue;
                 }
-                result.push_str(&format!(
-                    "const {} = Package.{}.{}",
-                    var.to_string(),
-                    source,
-                    var.to_string()
-                ));
+
+                if source.trim().to_lowercase().starts_with("java.") {
+                    result.push_str(&format!(
+                        "const {} = {}.{}",
+                        var.to_string(),
+                        source,
+                        var.to_string()
+                    ));
+                } else {
+                    result.push_str(&format!(
+                        "const {} = Packages.{}.{}",
+                        var.to_string(),
+                        source,
+                        var.to_string()
+                    ));
+                }
+
                 if i < vars.len() - 1 {
                     result.push_str("\n");
                 }
@@ -199,7 +236,11 @@ fn resolve(var: &Values, source: &String) -> String {
             result
         }
         Values::Rename { new, old } => {
-            format!("const {} = Package.{}.{}", new, source, old)
+            if source.trim().to_lowercase().starts_with("java.") {
+                format!("const {} = Packages.{}.{}", new, source, old)
+            } else {
+                format!("const {new} = {source}.{old}")
+            }
         }
         Values::DefaultWithMutiple { mutiple, default } => {
             let first = resolve(&Values::String(default.to_string()), source);
