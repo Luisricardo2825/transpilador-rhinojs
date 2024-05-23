@@ -2,10 +2,13 @@ program = _{ SOI ~ code ~ EOI }
 
 code = _{ NEWLINE* ~ ((import | directImport) ~ ";"? ~ NEWLINE+)* ~ (import | directImport)? ~ ";"? ~ rest }
 // Expression(Generic)
-directImport = { "import" ~ source }
-import       = { "import" ~ (defaultWithDestructuring | destructuring | rename | ident) ~ "from" ~ source }
+directImport = { NEWLINE* ~ "import" ~ source }
+import       = { NEWLINE* ~ "import" ~ (defaultWithDestructuring | destructuring | rename | ident) ~ "from" ~ source }
 
-source = @{ "\"" ~ ("\\\"" | (!"\"" ~ ANY))* ~ "\"" }
+source      = @{ quota | singleQuota | backtick }
+quota       =  { "\"" ~ ("\\\"" | (!"\"" ~ ANY))* ~ "\"" }
+singleQuota =  { "\'" ~ ("\\\'" | (!"\'" ~ ANY))* ~ "\'" }
+backtick    =  { "`" ~ ("\\`" | (!"`" ~ ANY))* ~ "`" }
 
 rename = { pastName ~ "as" ~ NEWLINE* ~ ident }
 
@@ -18,7 +21,7 @@ defaultWithDestructuring =  { ident ~ "," ~ NEWLINE* ~ destructuring }
 
 ident = @{ ASCII_ALPHA ~ (ASCII_ALPHANUMERIC | "_" | "$" | "@")* }
 
-rest       =  { ANY* }
+rest       = @{ ANY* }
 WHITESPACE = _{ " " | "\t" }
 
 COMMENT = _{ "//" ~ (!"\n" ~ ANY)* }
