@@ -3,7 +3,7 @@ use fancy_regex::Regex;
 use pest::Parser;
 use std::{
     io::{self, Write},
-    path::PathBuf,
+    path::{Path, PathBuf},
 };
 
 /// Conversor de javascript
@@ -81,15 +81,23 @@ fn convert(mut path: PathBuf, out: String) -> Result<(), io::Error> {
         }
         process_line(ele, &mut code);
     }
-    let code = code.join("\n");
     path.set_extension("js");
     let file_name = path.file_name().unwrap().to_str().unwrap();
     // Create out dir
     std::fs::create_dir_all(format!("./{}", out)).expect("Erro ao criar pasta de saida");
+    // Implement swc to transpile to js
+    let out_filename = format!("{}/{}", out, file_name);
+    let code = ts_to_js(&out_filename);
+
     // Create out file
-    let mut out =
-        std::fs::File::create(format!("{}/{}", out, file_name)).expect("Erro ao criar arquivo");
+    let mut out = std::fs::File::create(&out_filename).expect("Erro ao criar arquivo");
     out.write_all(code.as_bytes())
+        .expect("Erro ao escrever arquivo");
+    out.flush()?;
+
+    let minified_code = minify_js(&out_filename);
+    let mut out = std::fs::File::create(out_filename).expect("Erro ao criar arquivo");
+    out.write_all(minified_code.as_bytes())
         .expect("Erro ao escrever arquivo");
     out.flush()?;
     Ok(())
@@ -326,4 +334,62 @@ impl Values {
             _ => panic!("Not a multiple"),
         }
     }
+}
+
+use anyhow::Context;
+use swc::{config::JsMinifyOptions, try_with_handler, BoolOrDataConfig, JsMinifyExtras};
+use swc_common::{source_map::SourceMap, sync::Lrc, GLOBALS};
+
+/// Transforms typescript to javascript. Returns tuple (js string, source map)
+fn ts_to_js(filename: &str) -> String {
+    let cm = Lrc::<SourceMap>::default();
+
+    let c = swc::Compiler::new(cm.clone());
+    let output = GLOBALS
+        .set(&Default::default(), || {
+            try_with_handler(cm.clone(), Default::default(), |handler| {
+                let fm = cm
+                    .load_file(Path::new(filename))
+                    .expect("failed to load file");
+
+                c.process_js_file(fm, handler, &Default::default())
+                    .context("failed to process file")
+            })
+        })
+        .unwrap();
+
+    output.code
+}
+
+// Import Arc
+
+use std::sync::Arc;
+/// Transforms typescript to javascript. Returns tuple (js string, source map)
+fn minify_js(filename: &str) -> String {
+    let cm = Arc::<SourceMap>::default();
+
+    let c = swc::Compiler::new(cm.clone());
+    let output = GLOBALS
+        .set(&Default::default(), || {
+            try_with_handler(cm.clone(), Default::default(), |handler| {
+                let fm = cm
+                    .load_file(Path::new(filename))
+                    .expect("failed to load file");
+
+                c.minify(
+                    fm,
+                    handler,
+                    &JsMinifyOptions {
+                        compress: BoolOrDataConfig::from_bool(true),
+                        mangle: BoolOrDataConfig::from_bool(true),
+                        ..Default::default()
+                    },
+                    // Mangle name cache example. You may not need this.
+                    JsMinifyExtras::default(),
+                )
+                .context("failed to minify")
+            })
+        })
+        .unwrap();
+    output.code
 }

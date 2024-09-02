@@ -1,60 +1,79 @@
+import "br.com.sankhya.jape.EntityFacade";
+import "br.com.sankhya.jape.dao.JdbcWrapper";
+import "br.com.sankhya.modelcore.util.EntityFacadeFactory";
+import "br.com.sankhya.ws.ServiceContext";
+import { JsonArray } from "com.google.gson";
+import "com.google.gson.JsonObject";
+import "com.sankhya.util.JdbcUtils";
 import "java.nio.file.Files";
 import "java.nio.file.Path";
 import "java.nio.file.Paths";
+import { AbstractMap } from "java.util";
 import "java.util.Arrays";
-import "com.google.gson.JsonObject";
 import "java.util.Collections";
 import "java.util.List";
 import "java.util.stream.Collectors";
-import "br.com.sankhya.ws.ServiceContext";
-import JString from "java.lang.String";
 
-
-function log() {
-    var values = new JsonObject();
-    var res = new JsonObject();
-
-    var path = java.lang.System.getProperty("org.jboss.boot.log.file");
-
-    var filePath = Paths.get(path);
-    values.addProperty("filePath", filePath.toString());
-    var bytes = Files.readAllBytes(filePath);
-
-    var lines = new JString(bytes).split(System.lineSeparator());
-
-    list = Arrays.asList(lines);
-    Collections.reverse(list);
-    list = list.stream().limit(1000).collect(Collectors.toList());
-
-    var content = JString.join(System.lineSeparator(), list);
-    values.addProperty("content", content);
-    res.addProperty("log", content);
-
-    ServiceContext.getCurrent().setJsonResponse(res);
-    mensagem = content;
-}
 function query() {
-    var JdbcWrapper, EntityFacadeFactory, ServiceContext, JsonArray, JsonObject, JdbcUtils, AbstractMap, request, response, System = java.lang.System;
-    Packages.br.com.sankhya.extensions.actionbutton.AcaoRotinaJava, Packages.br.com.sankhya.extensions.actionbutton.ContextoAcao, Packages.br.com.sankhya.jape.EntityFacade, JdbcWrapper = Packages.br.com.sankhya.jape.dao.JdbcWrapper, EntityFacadeFactory = Packages.br.com.sankhya.modelcore.util.EntityFacadeFactory, ServiceContext = Packages.br.com.sankhya.ws.ServiceContext, JsonArray = Packages.com.google.gson.JsonArray, Packages.com.google.gson.JsonElement, JsonObject = Packages.com.google.gson.JsonObject, JdbcUtils = Packages.com.sankhya.util.JdbcUtils, java.sql.PreparedStatement, java.sql.ResultSet, java.sql.SQLException, AbstractMap = java.util.AbstractMap, java.util.Map, java.lang.Exception, response = function (e) {
-        var t, a, r, s, n = new JsonObject, o = null, c = null, g = System.currentTimeMillis();
+    function execute(query) {
+        const response = new JsonObject();
+        var jdbc = null;
+        var rset = null;
+        var start = System.currentTimeMillis();
         try {
-            if ((o = EntityFacadeFactory.getDWFFacade().getJdbcWrapper()).openSession(), a = (t = o.getPreparedStatement(e)).execute(), r = t.getUpdateCount(), c = t.getResultSet(), s = g - System.currentTimeMillis(), a) {
-                var i = function (e) {
-                    for (var t, a = new JsonArray, r = e.getMetaData().getColumnCount(), s = 0; e.next();) {
-                        s++, t = new JsonObject;
-                        for (var n = 1; r >= n; n++) {
-                            var o = e.getString(n), c = e.getMetaData().getColumnLabel(n);
-                            t.has(c) ? t.addProperty(c + n, o) : t.addProperty(c, o + "");
-                        }
-                        a.add(t);
-                    }
-                    return new AbstractMap.SimpleEntry(a, s);
-                }(c);
-                n.add("rows", i.getKey()), r = i.getValue();
+            const entity = EntityFacadeFactory.getDWFFacade();
+            jdbc = entity.getJdbcWrapper();
+            jdbc.openSession();
+            var upd = jdbc.getPreparedStatement(query);
+            var executeStatus = upd.execute();
+            var rowsUpdated = upd.getUpdateCount();
+            rset = upd.getResultSet();
+            var end = start - System.currentTimeMillis();
+            if (executeStatus) {
+                var rows = GetResults(rset);
+                response.add("rows", rows.getKey());
+                rowsUpdated = rows.getValue();
             }
-            return n.addProperty("rowsUpdated", r), n.addProperty("executeStatus", a), n.addProperty("queryTime", Math.abs(s)), n;
+            response.addProperty("rowsUpdated", rowsUpdated);
+            response.addProperty("executeStatus", executeStatus);
+            response.addProperty("queryTime", Math.abs(end));
+            return response;
+        } catch (e) {
+            throw new Error("Erro: " + e);
         } finally {
-            JdbcUtils.closeResultSet(c), JdbcWrapper.closeSession(o);
+            JdbcUtils.closeResultSet(rset);
+            JdbcWrapper.closeSession(jdbc);
         }
-    }((request = ServiceContext.getCurrent().getJsonRequestBody()).get("sql") ? request.get("sql").getAsString() : ""), ServiceContext.getCurrent().setJsonResponse(response);
+    }
+
+    function GetResults(rset) {
+        var results = new JsonArray();
+        var total_cols = rset.getMetaData().getColumnCount();
+        var rowsUpdated = 0;
+
+
+        while (rset.next()) {
+            rowsUpdated++;
+            var colJson = new JsonObject();
+            for (var col = 1; col <= total_cols; col++) {
+                var value = rset.getString(col);
+                var colLabel = rset.getMetaData().getColumnLabel(col);
+                if (!colJson.has(colLabel)) {
+                    colJson.addProperty(colLabel, value);
+                } else {
+                    colJson.addProperty(colLabel + col, value);
+                }
+            }
+            results.add(colJson);
+        }
+        return new AbstractMap.SimpleEntry(results, rowsUpdated);
+    }
+
+    const ctx = ServiceContext.getCurrent();
+    const request = ctx.getJsonRequestBody();
+    const sql = request.get("sql")?.getAsString();
+    const response = execute(sql);
+    ServiceContext.getCurrent().setJsonResponse(response);
 }
+
+message = query()
