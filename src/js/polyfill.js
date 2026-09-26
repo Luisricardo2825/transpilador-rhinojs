@@ -49,7 +49,7 @@ this.Java = Java;
 
   // Função genérica para criar polyfills
   const _polyfill = (obj, key, fn) => {
-    if (obj !== undefined && !obj[key]) obj[key] = fn;
+    if (obj !== undefined && typeof obj[key] === "undefined") Object.defineProperty(obj, key, { value: fn, configurable: true, writable: true, enumerable: true });
   };
 
   // ===== Função objectFrom =====
@@ -61,13 +61,20 @@ this.Java = Java;
     const Symbol = (description) => {
       if (new.target) throw new TypeError("Symbol is not a constructor");
       const tag = `@@Symbol(${description ?? ""}):${id++}`;
-      return { toString: () => tag };
+      return { __rhinoSymbol: true, toString: () => tag };
     };
-    _polyfill(Symbol, "for", (key) => (registry[key] ??= Symbol(key)));
+    _polyfill(Symbol, "for", (key) => ((registry[key] == null ? Object.defineProperty(registry, key, { value: Symbol(key), configurable: true, writable: true, enumerable: true }).value : registry[key])));
     _polyfill(Symbol, "keyFor", (sym) => {
       for (let k in registry) if (registry[k] === sym) return k;
     });
     Symbol.iterator = Symbol("iterator");
+    Symbol.hasInstance = Symbol("hasInstance");
+    Symbol.set = (obj, key, value) => {
+      if (key && key.__rhinoSymbol) {
+        Object.defineProperty(obj, key.toString(), { value, configurable: true, writable: true, enumerable: false });
+      } else Object.defineProperty(obj, key, { value, configurable: true, writable: true, enumerable: true });
+      return value;
+    };
     global.Symbol = Symbol;
   }
 
@@ -111,6 +118,24 @@ this.Java = Java;
   });
 
   // ===== Object polyfills =====
+  _polyfill(Object, "isJavaObject", (obj) => {
+    return typeof obj === "object" && obj != null && obj.getClass !== undefined;
+  });
+
+  _polyfill(Object, "is", (a, b) => {
+    if (a === b) return a !== 0 || 1 / a === 1 / b;
+    return a !== a && b !== b;
+  });
+  
+  _polyfill(Object, "equals", (a, b) => {
+    // Check if they are java objects if so, do java equals() method
+    if (Object.isJavaObject(a)) return a.equals(b);
+
+    if (Object.isJavaObject(b)) return false;
+    
+    return Object.is(a, b);
+  });
+
   _polyfill(Object, "from", objectFrom);
 
   _polyfill(Object, "keys", (obj) => {
@@ -184,8 +209,14 @@ this.Java = Java;
     return -1;
   });
 
-  _polyfill(Array.prototype, "includes", function (val) {
-    for (let i = 0; i < this.length; i++) if (this[i] === val) return true;
+  _polyfill(Array.prototype, "includes", function (val, fromIndex) {
+    const length = this.length >>> 0;
+    let index = fromIndex == null ? 0 : fromIndex | 0;
+    if (index < 0) index = Math.max(length + index, 0);
+    for (; index < length; index++) {
+      const current = this[index];
+      if (current === val || (current !== current && val !== val)) return true;
+    }
     return false;
   });
 
@@ -206,7 +237,7 @@ this.Java = Java;
     function (value, start = 0, end = this.length) {
       for (let i = start; i < end; i++) this[i] = value;
       return this;
-    }
+    },
   );
 
   _polyfill(
@@ -227,11 +258,25 @@ this.Java = Java;
         for (let i = 0; i < count; i++) this[target + i] = this[start + i];
       }
       return this;
-    }
+    },
   );
 
   // ===== Array estático =====
-  _polyfill(Array, "from", (obj) => (obj == null ? [] : Java.from(obj)));
+  _polyfill(Array, "from", function (obj) {
+    if (obj == null) return [];
+    const result = [];
+    const length = obj.length;
+    if (typeof length === "number") {
+      for (let i = 0; i < length; i++) result.push(obj[i]);
+      return result;
+    }
+    if (obj[Symbol.iterator]) {
+      const iterator = obj[Symbol.iterator]();
+      for (let item = iterator.next(); !item.done; item = iterator.next())
+        result.push(item.value);
+    }
+    return result;
+  });
 
   _polyfill(Array, "of", function () {
     const arr = [];
@@ -239,3 +284,32 @@ this.Java = Java;
     return arr;
   });
 })(this);
+
+Symbol.assign = function (obj, key, operator, value) {
+  var current = obj[key];
+  if (operator === '&&=' && !current) return current;
+  if (operator === '||=' && current) return current;
+  if (operator === '??=' && current != null) return current;
+  value = typeof value === 'function' ? value() : value;
+  switch (operator) {
+    case '+=': return Symbol.set(obj, key, current + value);
+    case '-=': return Symbol.set(obj, key, current - value);
+    case '*=': return Symbol.set(obj, key, current * value);
+    case '/=': return Symbol.set(obj, key, current / value);
+    case '%=': return Symbol.set(obj, key, current % value);
+    case '**=': return Symbol.set(obj, key, Math.pow(current, value));
+    case '<<=': return Symbol.set(obj, key, current << value);
+    case '>>=': return Symbol.set(obj, key, current >> value);
+    case '>>>=': return Symbol.set(obj, key, current >>> value);
+    case '|=': return Symbol.set(obj, key, current | value);
+    case '^=': return Symbol.set(obj, key, current ^ value);
+    case '&=': return Symbol.set(obj, key, current & value);
+  }
+  throw new TypeError('Unsupported Symbol assignment operator: ' + operator);
+};
+
+Symbol.instanceOf = function (value, constructor) {
+  var handler = constructor && constructor[Symbol.hasInstance];
+  if (typeof handler === "function") return !!handler.call(constructor, value);
+  return !!(constructor && constructor.prototype && constructor.prototype.isPrototypeOf(value));
+};

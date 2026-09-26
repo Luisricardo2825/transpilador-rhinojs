@@ -1,5 +1,7 @@
-declare var mensagem: string;
+import { Teste } from "./classes/Teste";
 
+declare var mensagem: string;
+const teste = new Teste();
 const dados = [
   {
     deltaDiff: "0",
@@ -369,3 +371,5 @@ const valorTotal = dados.reduce((acc, curr) => {
 }, 0);
 
 mensagem = `Valor total: ${valorTotal} - Quantidade de parcelas: ${dados.length}`;
+
+teste.doAction(contexto);

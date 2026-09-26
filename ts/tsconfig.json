@@ -2,6 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "skipLibCheck": true,
+    "module": "esnext",
     "paths": {
       "@Java/*": ["C:/Users/luis_/repositorios/typescript/Packages/*"]
     }
