@@ -1,0 +1,6372 @@
+{
+  "classes" : [ {
+    "implements" : [ "org.apache.batik.parser.PathHandler", "org.apache.batik.parser.ShapeProducer" ],
+    "constructors" : [ {
+      "name" : "AWTPathProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AWTPathProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getShape",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : true,
+      "name" : "createShape",
+      "params" : [ "java.io.Reader", "int" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : false,
+      "name" : "closePath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getWindingRule",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setWindingRule",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalRel",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalRel",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicRel",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicAbs",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcRel",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcAbs",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AWTPathProducer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "AWTPolygonProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.AWTPolylineProducer",
+    "simpleName" : "AWTPolygonProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "endPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "createShape",
+      "params" : [ "java.io.Reader", "int" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : false,
+      "name" : "startPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getShape",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : false,
+      "name" : "point",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getWindingRule",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setWindingRule",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AWTPolygonProducer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.PointsHandler", "org.apache.batik.parser.ShapeProducer" ],
+    "constructors" : [ {
+      "name" : "AWTPolylineProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AWTPolylineProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "endPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getShape",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : true,
+      "name" : "createShape",
+      "params" : [ "java.io.Reader", "int" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : false,
+      "name" : "point",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getWindingRule",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setWindingRule",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AWTPolylineProducer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.TransformListHandler" ],
+    "constructors" : [ {
+      "name" : "AWTTransformProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AWTTransformProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTransformList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewX",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewY",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "matrix",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "createAffineTransform",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.geom.AffineTransform"
+    }, {
+      "isStatic" : true,
+      "name" : "createAffineTransform",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.geom.AffineTransform"
+    }, {
+      "isStatic" : false,
+      "name" : "startTransformList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getAffineTransform",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.geom.AffineTransform"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AWTTransformProducer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.Parser" ],
+    "constructors" : [ {
+      "name" : "AbstractParser",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AbstractParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AbstractParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "AbstractScanner",
+      "params" : [ "java.lang.String" ]
+    }, {
+      "name" : "AbstractScanner",
+      "params" : [ "java.io.Reader" ]
+    }, {
+      "name" : "AbstractScanner",
+      "params" : [ "java.io.InputStream", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AbstractScanner",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "clearBuffer",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStart",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getBuffer",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "char[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getColumn",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getLine",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getStringValue",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getEnd",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "next",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AbstractScanner",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AngleHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "startAngle",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endAngle",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "angleValue",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rad",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "deg",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "grad",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AngleHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "AngleParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.NumberParser",
+    "simpleName" : "AngleParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setAngleHandler",
+      "params" : [ "org.apache.batik.parser.AngleHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getAngleHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.AngleHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.AngleParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ClockHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "clockValue",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.ClockHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ClockParser",
+      "params" : [ "boolean" ]
+    } ],
+    "extends" : "org.apache.batik.parser.TimingParser",
+    "simpleName" : "ClockParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setClockHandler",
+      "params" : [ "org.apache.batik.parser.ClockHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getClockHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.ClockHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.ClockParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.AngleHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultAngleHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "startAngle",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endAngle",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "angleValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rad",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "deg",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "grad",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultAngleHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.AngleHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.ErrorHandler" ],
+    "constructors" : [ {
+      "name" : "DefaultErrorHandler",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultErrorHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "error",
+      "params" : [ "org.apache.batik.parser.ParseException" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultErrorHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.FragmentIdentifierHandler" ],
+    "constructors" : [ ],
+    "extends" : "org.apache.batik.parser.DefaultPreserveAspectRatioHandler",
+    "simpleName" : "DefaultFragmentIdentifierHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endViewTarget",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startViewTarget",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTransformList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "idReference",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "viewBox",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewX",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewY",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "viewTarget",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "zoomAndPan",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "matrix",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startTransformList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startFragmentIdentifier",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endFragmentIdentifier",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "none",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMin",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMin",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMid",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMax",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMax",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMid",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMid",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMin",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMax",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "meet",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "slice",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultFragmentIdentifierHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.FragmentIdentifierHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.PreserveAspectRatioHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.LengthHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultLengthHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "pc",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pt",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "cm",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "em",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "percentage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mm",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "px",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "lengthValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "in",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ex",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultLengthHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.LengthHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.LengthListHandler" ],
+    "constructors" : [ ],
+    "extends" : "org.apache.batik.parser.DefaultLengthHandler",
+    "simpleName" : "DefaultLengthListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "startLengthList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLengthList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pc",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pt",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "cm",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "em",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "percentage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mm",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "px",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "lengthValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "in",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ex",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultLengthListHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.LengthListHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.LengthHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.NumberListHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultNumberListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "numberValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endNumberList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startNumberList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultNumberListHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.NumberListHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.PathHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultPathHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "closePath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalRel",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalRel",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicRel",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicAbs",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcRel",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcAbs",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultPathHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.PathHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.PointsHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultPointsHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "endPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "point",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultPointsHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.DefaultPointsHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.PreserveAspectRatioHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultPreserveAspectRatioHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "none",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMin",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMin",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMid",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMax",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMax",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMid",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMid",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMin",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMax",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "meet",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "slice",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultPreserveAspectRatioHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.PreserveAspectRatioHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.TimingSpecifierHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultTimingSpecifierHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "indefinite",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accesskey",
+      "params" : [ "float", "char" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "eventbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wallclock",
+      "params" : [ "java.util.Calendar" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "syncbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accessKeySVG12",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mediaMarker",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "offset",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultTimingSpecifierHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.TimingSpecifierHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.TimingSpecifierListHandler" ],
+    "constructors" : [ ],
+    "extends" : "org.apache.batik.parser.DefaultTimingSpecifierHandler",
+    "simpleName" : "DefaultTimingSpecifierListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "startTimingSpecifierList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTimingSpecifierList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "indefinite",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accesskey",
+      "params" : [ "float", "char" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "eventbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wallclock",
+      "params" : [ "java.util.Calendar" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "syncbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accessKeySVG12",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mediaMarker",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "offset",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultTimingSpecifierListHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.TimingSpecifierListHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.TimingSpecifierHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.TransformListHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultTransformListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTransformList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewX",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewY",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "matrix",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startTransformList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.DefaultTransformListHandler",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.TransformListHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ErrorHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "error",
+      "params" : [ "org.apache.batik.parser.ParseException" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.ErrorHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.batik.parser.PointsHandler" ],
+    "constructors" : [ {
+      "name" : "FloatArrayProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.DefaultNumberListHandler",
+    "simpleName" : "FloatArrayProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "endPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPoints",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "numberValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "point",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endNumberList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startNumberList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getFloatArray",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "float[]"
+    }, {
+      "isStatic" : false,
+      "name" : "startNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.FloatArrayProducer",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.NumberListHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.parser.PreserveAspectRatioHandler", "org.apache.batik.parser.TransformListHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "FragmentIdentifierHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "endViewTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startViewTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "idReference",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "viewBox",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "viewTarget",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "zoomAndPan",
+      "params" : [ "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startFragmentIdentifier",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endFragmentIdentifier",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "none",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMin",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMin",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMid",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMax",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMax",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMid",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMid",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMin",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMax",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "meet",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "slice",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTransformList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewX",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewY",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "matrix",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startTransformList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.FragmentIdentifierHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "FragmentIdentifierParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.NumberParser",
+    "simpleName" : "FragmentIdentifierParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setFragmentIdentifierHandler",
+      "params" : [ "org.apache.batik.parser.FragmentIdentifierHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getFragmentIdentifierHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.FragmentIdentifierHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.FragmentIdentifierParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "LengthArrayProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.DefaultLengthListHandler",
+    "simpleName" : "LengthArrayProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "pc",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pt",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "numberValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "cm",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "em",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLengthTypeArray",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "short[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getLengthValueArray",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "float[]"
+    }, {
+      "isStatic" : false,
+      "name" : "startLengthList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "percentage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLengthList",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mm",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "px",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "lengthValue",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "in",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ex",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.LengthArrayProducer",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.LengthListHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "INSTANCE",
+      "type" : "org.apache.batik.parser.LengthHandler"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "LengthHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "pc",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pt",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "cm",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "em",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startLength",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "percentage",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLength",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mm",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "px",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "lengthValue",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "in",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ex",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.LengthHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.batik.parser.LengthHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "LengthListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "startLengthList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLengthList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pc",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "pt",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "cm",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "em",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startLength",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "percentage",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endLength",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mm",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "px",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "lengthValue",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "in",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ex",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.LengthListHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "LengthListParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.LengthParser",
+    "simpleName" : "LengthListParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getLengthListHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.LengthListHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setLengthListHandler",
+      "params" : [ "org.apache.batik.parser.LengthListHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setLengthHandler",
+      "params" : [ "org.apache.batik.parser.LengthHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLengthHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.LengthHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.LengthListParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "LengthPairListParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.LengthListParser",
+    "simpleName" : "LengthPairListParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getLengthListHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.LengthListHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setLengthListHandler",
+      "params" : [ "org.apache.batik.parser.LengthListHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setLengthHandler",
+      "params" : [ "org.apache.batik.parser.LengthHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLengthHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.LengthHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.LengthPairListParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "LengthParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.AbstractParser",
+    "simpleName" : "LengthParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setLengthHandler",
+      "params" : [ "org.apache.batik.parser.LengthHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLengthHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.LengthHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.LengthParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "NumberListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "numberValue",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endNumberList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startNumber",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endNumber",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startNumberList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.NumberListHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "NumberListParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.NumberParser",
+    "simpleName" : "NumberListParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setNumberListHandler",
+      "params" : [ "org.apache.batik.parser.NumberListHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getNumberListHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.NumberListHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.NumberListParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "NumberParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.AbstractParser",
+    "simpleName" : "NumberParser",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.NumberParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ParseException",
+      "params" : [ "java.lang.String", "int", "int" ]
+    }, {
+      "name" : "ParseException",
+      "params" : [ "java.lang.String", "java.lang.Exception" ]
+    }, {
+      "name" : "ParseException",
+      "params" : [ "java.lang.Exception" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "ParseException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getColumnNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getException",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Exception"
+    }, {
+      "isStatic" : false,
+      "name" : "getLineNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.ParseException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.i18n.Localizable" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Parser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    } ],
+    "name" : "org.apache.batik.parser.Parser",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.batik.parser.PathHandler" ],
+    "constructors" : [ {
+      "name" : "PathArrayProducer",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "PathArrayProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "closePath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalRel",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalRel",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicRel",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicAbs",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcRel",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcAbs",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPath",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPathCommands",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "short[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getPathParameters",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "float[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PathArrayProducer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "PathHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "closePath",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoHorizontalRel",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalRel",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticSmoothRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicSmoothRel",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoQuadraticAbs",
+      "params" : [ "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoVerticalAbs",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "movetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicRel",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoAbs",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPath",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "curvetoCubicAbs",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcRel",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "arcAbs",
+      "params" : [ "float", "float", "float", "boolean", "boolean", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPath",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "linetoRel",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PathHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "PathParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.NumberParser",
+    "simpleName" : "PathParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setPathHandler",
+      "params" : [ "org.apache.batik.parser.PathHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPathHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.PathHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PathParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "PointsHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "endPoints",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPoints",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "point",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PointsHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "PointsParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.NumberParser",
+    "simpleName" : "PointsParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setPointsHandler",
+      "params" : [ "org.apache.batik.parser.PointsHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPointsHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.PointsHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PointsParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "PreserveAspectRatioHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "none",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMin",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMin",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMid",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMax",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMax",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMid",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMidYMid",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMinYMin",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "xMaxYMax",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "meet",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startPreserveAspectRatio",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "slice",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PreserveAspectRatioHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "PreserveAspectRatioParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.AbstractParser",
+    "simpleName" : "PreserveAspectRatioParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setPreserveAspectRatioHandler",
+      "params" : [ "org.apache.batik.parser.PreserveAspectRatioHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPreserveAspectRatioHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.PreserveAspectRatioHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.PreserveAspectRatioParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ShapeProducer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getShape",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.awt.Shape"
+    }, {
+      "isStatic" : false,
+      "name" : "getWindingRule",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setWindingRule",
+      "params" : [ "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.ShapeProducer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimingParser",
+      "params" : [ "boolean", "boolean" ]
+    } ],
+    "extends" : "org.apache.batik.parser.AbstractParser",
+    "simpleName" : "TimingParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TimingParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimingSpecifierHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String", "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "indefinite",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accesskey",
+      "params" : [ "float", "char" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "eventbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wallclock",
+      "params" : [ "java.util.Calendar" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "syncbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accessKeySVG12",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mediaMarker",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "offset",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TimingSpecifierHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.batik.parser.TimingSpecifierHandler" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimingSpecifierListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "startTimingSpecifierList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTimingSpecifierList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "repeat",
+      "params" : [ "float", "java.lang.String", "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "indefinite",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accesskey",
+      "params" : [ "float", "char" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "eventbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wallclock",
+      "params" : [ "java.util.Calendar" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "syncbase",
+      "params" : [ "float", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "accessKeySVG12",
+      "params" : [ "float", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "mediaMarker",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "offset",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TimingSpecifierListHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimingSpecifierListParser",
+      "params" : [ "boolean", "boolean" ]
+    } ],
+    "extends" : "org.apache.batik.parser.TimingSpecifierParser",
+    "simpleName" : "TimingSpecifierListParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getTimingSpecifierListHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.TimingSpecifierListHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setTimingSpecifierListHandler",
+      "params" : [ "org.apache.batik.parser.TimingSpecifierListHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimingSpecifierHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.TimingSpecifierHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setTimingSpecifierHandler",
+      "params" : [ "org.apache.batik.parser.TimingSpecifierHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TimingSpecifierListParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimingSpecifierParser",
+      "params" : [ "boolean", "boolean" ]
+    } ],
+    "extends" : "org.apache.batik.parser.TimingParser",
+    "simpleName" : "TimingSpecifierParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getTimingSpecifierHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.TimingSpecifierHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setTimingSpecifierHandler",
+      "params" : [ "org.apache.batik.parser.TimingSpecifierHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TimingSpecifierParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TransformListHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "scale",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "endTransformList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "translate",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewX",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skewY",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "matrix",
+      "params" : [ "float", "float", "float", "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "startTransformList",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "rotate",
+      "params" : [ "float", "float", "float" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TransformListHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TransformListParser",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.batik.parser.NumberParser",
+    "simpleName" : "TransformListParser",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setTransformListHandler",
+      "params" : [ "org.apache.batik.parser.TransformListHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTransformListHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.parser.TransformListHandler"
+    }, {
+      "isStatic" : true,
+      "name" : "buildFloat",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "setErrorHandler",
+      "params" : [ "org.apache.batik.parser.ErrorHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.InputStream", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "parse",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.TransformListParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BUNDLE_CLASSNAME",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "UnitProcessor",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "userSpaceToSVG",
+      "params" : [ "float", "short", "short", "org.apache.batik.parser.UnitProcessor$Context" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : true,
+      "name" : "svgToUserSpace",
+      "params" : [ "float", "short", "short", "org.apache.batik.parser.UnitProcessor$Context" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : true,
+      "name" : "svgToUserSpace",
+      "params" : [ "java.lang.String", "java.lang.String", "short", "org.apache.batik.parser.UnitProcessor$Context" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : true,
+      "name" : "svgToObjectBoundingBox",
+      "params" : [ "java.lang.String", "java.lang.String", "short", "org.apache.batik.parser.UnitProcessor$Context" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : true,
+      "name" : "svgToObjectBoundingBox",
+      "params" : [ "float", "short", "short", "org.apache.batik.parser.UnitProcessor$Context" ],
+      "isAbstract" : false,
+      "returnType" : "float"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.parser.UnitProcessor",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "HORIZONTAL_LENGTH",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "VERTICAL_LENGTH",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "OTHER_LENGTH",
+      "type" : "short"
+    } ],
+    "isInterface" : false
+  } ],
+  "group" : "org.apache.batik.parser"
+}

@@ -1,0 +1,3094 @@
+{
+  "classes" : [ {
+    "implements" : [ "org.apache.batik.i18n.Localizable" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Interpreter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.io.Reader", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "dispose",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "bindObject",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setOut",
+      "params" : [ "java.io.Writer" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    } ],
+    "name" : "org.apache.batik.script.Interpreter",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "InterpreterException",
+      "params" : [ "java.lang.String", "int", "int" ]
+    }, {
+      "name" : "InterpreterException",
+      "params" : [ "java.lang.Exception", "java.lang.String", "int", "int" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "InterpreterException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getColumnNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getException",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Exception"
+    }, {
+      "isStatic" : false,
+      "name" : "getLineNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.InterpreterException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "InterpreterFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getMimeTypes",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String[]"
+    }, {
+      "isStatic" : false,
+      "name" : "createInterpreter",
+      "params" : [ "java.net.URL", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.batik.script.Interpreter"
+    } ],
+    "name" : "org.apache.batik.script.InterpreterFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "InterpreterPool",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "InterpreterPool",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "createInterpreter",
+      "params" : [ "org.w3c.dom.Document", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.script.Interpreter"
+    }, {
+      "isStatic" : false,
+      "name" : "putInterpreterFactory",
+      "params" : [ "java.lang.String", "org.apache.batik.script.InterpreterFactory" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "removeInterpreterFactory",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.InterpreterPool",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "BIND_NAME_DOCUMENT",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ScriptEventWrapper",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getEventObject",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.batik.script.ScriptEventWrapper",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ScriptHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "run",
+      "params" : [ "org.w3c.dom.Document", "org.apache.batik.script.Window" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.ScriptHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Window",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setTimeout",
+      "params" : [ "java.lang.Runnable", "long" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "setTimeout",
+      "params" : [ "java.lang.String", "long" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getInterpreter",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.batik.script.Interpreter"
+    }, {
+      "isStatic" : false,
+      "name" : "clearInterval",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "clearTimeout",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "prompt",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "prompt",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setInterval",
+      "params" : [ "java.lang.String", "long" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "setInterval",
+      "params" : [ "java.lang.Runnable", "long" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "alert",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "postURL",
+      "params" : [ "java.lang.String", "java.lang.String", "org.apache.batik.script.Window$URLResponseHandler", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "postURL",
+      "params" : [ "java.lang.String", "java.lang.String", "org.apache.batik.script.Window$URLResponseHandler", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "postURL",
+      "params" : [ "java.lang.String", "java.lang.String", "org.apache.batik.script.Window$URLResponseHandler" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "confirm",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getBridgeContext",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.batik.bridge.BridgeContext"
+    }, {
+      "isStatic" : false,
+      "name" : "parseXML",
+      "params" : [ "java.lang.String", "org.w3c.dom.Document" ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Node"
+    }, {
+      "isStatic" : false,
+      "name" : "getURL",
+      "params" : [ "java.lang.String", "org.apache.batik.script.Window$URLResponseHandler" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getURL",
+      "params" : [ "java.lang.String", "org.apache.batik.script.Window$URLResponseHandler", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.Window",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "BatikSecurityController",
+      "params" : [ ]
+    } ],
+    "extends" : "org.mozilla.javascript.SecurityController",
+    "simpleName" : "BatikSecurityController",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "createClassLoader",
+      "params" : [ "java.lang.ClassLoader", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.GeneratedClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "callWithDomain",
+      "params" : [ "java.lang.Object", "org.mozilla.javascript.Context", "org.mozilla.javascript.Callable", "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.Scriptable", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getDynamicSecurityDomain",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "hasGlobal",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "createLoader",
+      "params" : [ "java.lang.ClassLoader", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.GeneratedClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "execWithDomain",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.Script", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "initGlobal",
+      "params" : [ "org.mozilla.javascript.SecurityController" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStaticSecurityDomainClassInternal",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : true,
+      "name" : "getStaticSecurityDomainClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.BatikSecurityController",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "BatikWrapFactory",
+      "params" : [ "org.apache.batik.script.rhino.RhinoInterpreter" ]
+    } ],
+    "extends" : "org.mozilla.javascript.WrapFactory",
+    "simpleName" : "BatikWrapFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "wrap",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wrapJavaClass",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "wrapNewObject",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "wrapAsJavaObject",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "isJavaPrimitiveWrap",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setJavaPrimitiveWrap",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.BatikWrapFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "org.mozilla.javascript.NativeJavaObject",
+    "simpleName" : "EventTargetWrapper",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "initMap",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "has",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "has",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getIds",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "hasInstance",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setParentScope",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getParentScope",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrototype",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : true,
+      "name" : "coerceType",
+      "params" : [ "java.lang.Class", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "delete",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "delete",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultValue",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "wrap",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Object", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "canConvert",
+      "params" : [ "java.lang.Object", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "unwrap",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getClassName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.EventTargetWrapper",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "ADD_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "ADDNS_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "REMOVE_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "REMOVENS_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "NOT_FOUND",
+      "type" : "java.lang.Object"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Messages",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "getString",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : true,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getCharacter",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "getInteger",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.Messages",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.mozilla.javascript.GeneratedClassLoader" ],
+    "constructors" : [ {
+      "name" : "RhinoClassLoader",
+      "params" : [ "java.net.URL", "java.lang.ClassLoader" ]
+    } ],
+    "extends" : "java.net.URLClassLoader",
+    "simpleName" : "RhinoClassLoader",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getAccessControlContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.security.AccessControlContext"
+    }, {
+      "isStatic" : false,
+      "name" : "linkClass",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineClass",
+      "params" : [ "java.lang.String", "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : true,
+      "name" : "newInstance",
+      "params" : [ "java.net.URL[]", "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URLClassLoader"
+    }, {
+      "isStatic" : true,
+      "name" : "newInstance",
+      "params" : [ "java.net.URL[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URLClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResourceAsStream",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "findResource",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "close",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getURLs",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL[]"
+    }, {
+      "isStatic" : false,
+      "name" : "loadClass",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResource",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemResourceAsStream",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemResource",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : false,
+      "name" : "getResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "getParent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "setDefaultAssertionStatus",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setPackageAssertionStatus",
+      "params" : [ "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setClassAssertionStatus",
+      "params" : [ "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "clearAssertionStatus",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.RhinoClassLoader",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.mozilla.javascript.ClassShutter" ],
+    "constructors" : [ {
+      "name" : "RhinoClassShutter",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "RhinoClassShutter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "visibleToScripts",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.RhinoClassShutter",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.script.Interpreter" ],
+    "constructors" : [ {
+      "name" : "RhinoInterpreter",
+      "params" : [ "java.net.URL" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "RhinoInterpreter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.io.Reader", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getAccessControlContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.security.AccessControlContext"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "dispose",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getWindow",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.script.Window"
+    }, {
+      "isStatic" : false,
+      "name" : "bindObject",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getContextFactory",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.ContextFactory"
+    }, {
+      "isStatic" : false,
+      "name" : "setOut",
+      "params" : [ "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.RhinoInterpreter",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "SOURCE_NAME_SVG",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "BIND_NAME_WINDOW",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.script.InterpreterFactory" ],
+    "constructors" : [ {
+      "name" : "RhinoInterpreterFactory",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "RhinoInterpreterFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getMimeTypes",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String[]"
+    }, {
+      "isStatic" : false,
+      "name" : "createInterpreter",
+      "params" : [ "java.net.URL", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.script.Interpreter"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.RhinoInterpreterFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "WindowWrapper",
+      "params" : [ "org.mozilla.javascript.Context" ]
+    } ],
+    "extends" : "org.mozilla.javascript.ImporterTopLevel",
+    "simpleName" : "WindowWrapper",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setTimeout",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "clearInterval",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "clearTimeout",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "prompt",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "setInterval",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "alert",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "postURL",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "confirm",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "parseXML",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getURL",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getClassName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "has",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "execIdCall",
+      "params" : [ "org.mozilla.javascript.IdFunctionObject", "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.Scriptable", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "importPackage",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initStandardObjects",
+      "params" : [ "org.mozilla.javascript.Context", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "init",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getBuiltinCtor",
+      "params" : [ "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.BaseFunction"
+    }, {
+      "isStatic" : true,
+      "name" : "getBuiltinCtor",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Function"
+    }, {
+      "isStatic" : false,
+      "name" : "cacheBuiltins",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getBuiltinPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getBuiltinPrototype",
+      "params" : [ "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "hasPrototypeMap",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "exportAsJSClass",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.IdFunctionObject"
+    }, {
+      "isStatic" : false,
+      "name" : "defineOwnProperty",
+      "params" : [ "org.mozilla.javascript.Context", "java.lang.Object", "org.mozilla.javascript.ScriptableObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initPrototypeValue",
+      "params" : [ "int", "java.lang.String", "java.lang.Object", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initPrototypeMethod",
+      "params" : [ "java.lang.Object", "int", "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initPrototypeConstructor",
+      "params" : [ "org.mozilla.javascript.IdFunctionObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "activatePrototypeMap",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "delete",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "has",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "hasProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "hasProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "putProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "putProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getIds",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "hasInstance",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setParentScope",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getParentScope",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrototype",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : true,
+      "name" : "callMethod",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "callMethod",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getTopLevelScope",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "associateValue",
+      "params" : [ "java.lang.Object", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "sealObject",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getPropertyIds",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "isConst",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "getTopScopeValue",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "defineProperty",
+      "params" : [ "java.lang.String", "java.lang.Class", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "defineProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineProperty",
+      "params" : [ "java.lang.String", "java.lang.Object", "java.lang.reflect.Method", "java.lang.reflect.Method", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineProperty",
+      "params" : [ "java.lang.String", "java.lang.Object", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "putConstProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "putConst",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTypeOf",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAllIds",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "isExtensible",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "defineConst",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "redefineProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "deleteProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "deleteProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "getTypedProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getTypedProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getAssociatedValue",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "avoidObjectDetection",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventExtensions",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getObjectPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : true,
+      "name" : "getClassPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "setGetterOrSetter",
+      "params" : [ "java.lang.String", "int", "org.mozilla.javascript.Callable", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getExternalArrayLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getArrayPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getGetterOrSetter",
+      "params" : [ "java.lang.String", "int", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "defineConstProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setExternalArrayData",
+      "params" : [ "org.mozilla.javascript.ExternalArrayData" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineOwnProperties",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.ScriptableObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getFunctionPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "defineFunctionProperties",
+      "params" : [ "java.lang.String[]", "java.lang.Class", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getExternalArrayData",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.ExternalArrayData"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "isEmpty",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "size",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "defineClass",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "defineClass",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "defineClass",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class", "boolean", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "delete",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getDefaultValue",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultValue",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "isSealed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.WindowWrapper",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "EMPTY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "READONLY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DONTENUM",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PERMANENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "UNINITIALIZED_CONST",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CONST",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NOT_FOUND",
+      "type" : "java.lang.Object"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "GlobalWrapper",
+      "params" : [ "org.mozilla.javascript.Context" ]
+    } ],
+    "extends" : "org.apache.batik.script.rhino.WindowWrapper",
+    "simpleName" : "GlobalWrapper",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "startMouseCapture",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "stopMouseCapture",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getClassName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "setTimeout",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "clearInterval",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "clearTimeout",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "prompt",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "setInterval",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "alert",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "postURL",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "confirm",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "parseXML",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getURL",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "has",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "execIdCall",
+      "params" : [ "org.mozilla.javascript.IdFunctionObject", "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.Scriptable", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "importPackage",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.Object[]", "org.mozilla.javascript.Function" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initStandardObjects",
+      "params" : [ "org.mozilla.javascript.Context", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "init",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getBuiltinCtor",
+      "params" : [ "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.BaseFunction"
+    }, {
+      "isStatic" : true,
+      "name" : "getBuiltinCtor",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Function"
+    }, {
+      "isStatic" : false,
+      "name" : "cacheBuiltins",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getBuiltinPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable", "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getBuiltinPrototype",
+      "params" : [ "org.mozilla.javascript.TopLevel$Builtins" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "hasPrototypeMap",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "exportAsJSClass",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.IdFunctionObject"
+    }, {
+      "isStatic" : false,
+      "name" : "defineOwnProperty",
+      "params" : [ "org.mozilla.javascript.Context", "java.lang.Object", "org.mozilla.javascript.ScriptableObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initPrototypeValue",
+      "params" : [ "int", "java.lang.String", "java.lang.Object", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initPrototypeMethod",
+      "params" : [ "java.lang.Object", "int", "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initPrototypeConstructor",
+      "params" : [ "org.mozilla.javascript.IdFunctionObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "activatePrototypeMap",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "delete",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "has",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "hasProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "hasProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "putProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "putProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getIds",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "hasInstance",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setParentScope",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getParentScope",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrototype",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : true,
+      "name" : "callMethod",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "callMethod",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getTopLevelScope",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "associateValue",
+      "params" : [ "java.lang.Object", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "sealObject",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getPropertyIds",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "isConst",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "getTopScopeValue",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "defineProperty",
+      "params" : [ "java.lang.String", "java.lang.Class", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "defineProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineProperty",
+      "params" : [ "java.lang.String", "java.lang.Object", "java.lang.reflect.Method", "java.lang.reflect.Method", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineProperty",
+      "params" : [ "java.lang.String", "java.lang.Object", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "putConstProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "putConst",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTypeOf",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAllIds",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "isExtensible",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "defineConst",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "redefineProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "deleteProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "deleteProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "getTypedProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getTypedProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getAssociatedValue",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "avoidObjectDetection",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventExtensions",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getObjectPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : true,
+      "name" : "getClassPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "setGetterOrSetter",
+      "params" : [ "java.lang.String", "int", "org.mozilla.javascript.Callable", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getExternalArrayLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getArrayPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "getGetterOrSetter",
+      "params" : [ "java.lang.String", "int", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "defineConstProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setExternalArrayData",
+      "params" : [ "org.mozilla.javascript.ExternalArrayData" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "defineOwnProperties",
+      "params" : [ "org.mozilla.javascript.Context", "org.mozilla.javascript.ScriptableObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getFunctionPrototype",
+      "params" : [ "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.Scriptable"
+    }, {
+      "isStatic" : false,
+      "name" : "defineFunctionProperties",
+      "params" : [ "java.lang.String[]", "java.lang.Class", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getExternalArrayData",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.ExternalArrayData"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "int" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "isEmpty",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "size",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "defineClass",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "defineClass",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "defineClass",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class", "boolean", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "delete",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getDefaultValue",
+      "params" : [ "org.mozilla.javascript.Scriptable", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultValue",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "isSealed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "int", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "java.lang.String", "org.mozilla.javascript.Scriptable" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.svg12.GlobalWrapper",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "EMPTY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "READONLY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DONTENUM",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PERMANENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "UNINITIALIZED_CONST",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CONST",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NOT_FOUND",
+      "type" : "java.lang.Object"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "SVG12RhinoInterpreter",
+      "params" : [ "java.net.URL" ]
+    } ],
+    "extends" : "org.apache.batik.script.rhino.RhinoInterpreter",
+    "simpleName" : "SVG12RhinoInterpreter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.io.Reader", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.io.Reader" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "evaluate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getAccessControlContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.security.AccessControlContext"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "dispose",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getWindow",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.batik.script.Window"
+    }, {
+      "isStatic" : false,
+      "name" : "bindObject",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getContextFactory",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.mozilla.javascript.ContextFactory"
+    }, {
+      "isStatic" : false,
+      "name" : "setOut",
+      "params" : [ "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.script.rhino.svg12.SVG12RhinoInterpreter",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "SOURCE_NAME_SVG",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "BIND_NAME_WINDOW",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  } ],
+  "group" : "org.apache.batik.script"
+}

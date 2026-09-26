@@ -1,0 +1,3146 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ProcessValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel" ],
+      "isAbstract" : true,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getValidatorSets",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.util.List"
+    } ],
+    "name" : "org.activiti.validation.ProcessValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ProcessValidatorFactory",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ProcessValidatorFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "createDefaultProcessValidator",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.activiti.validation.ProcessValidator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.ProcessValidatorFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.activiti.validation.ProcessValidator" ],
+    "constructors" : [ {
+      "name" : "ProcessValidatorImpl",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ProcessValidatorImpl",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "addValidatorSet",
+      "params" : [ "org.activiti.validation.validator.ValidatorSet" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setValidatorSets",
+      "params" : [ "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getValidatorSets",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.ProcessValidatorImpl",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ValidationError",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ValidationError",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getXmlLineNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setXmlLineNumber",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setProblem",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setWarning",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getProblem",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getXmlColumnNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setXmlColumnNumber",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setProcessDefinitionName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getActivityId",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getValidatorSetName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultDescription",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setValidatorSetName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setDefaultDescription",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "isWarning",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getActivityName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setActivityId",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setActivityName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getProcessDefinitionId",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getProcessDefinitionName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setProcessDefinitionId",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.ValidationError",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Problems",
+    "methods" : [ ],
+    "name" : "org.activiti.validation.validator.Problems",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "ALL_PROCESS_DEFINITIONS_NOT_EXECUTABLE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "PROCESS_DEFINITION_NOT_EXECUTABLE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "ASSOCIATION_INVALID_SOURCE_REFERENCE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "ASSOCIATION_INVALID_TARGET_REFERENCE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EXECUTION_LISTENER_IMPLEMENTATION_MISSING",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_LISTENER_IMPLEMENTATION_MISSING",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_LISTENER_INVALID_IMPLEMENTATION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_LISTENER_INVALID_THROW_EVENT_TYPE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "START_EVENT_MULTIPLE_FOUND",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "START_EVENT_INVALID_EVENT_DEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SEQ_FLOW_INVALID_SRC",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SEQ_FLOW_INVALID_TARGET",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "USER_TASK_LISTENER_IMPLEMENTATION_MISSING",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SERVICE_TASK_INVALID_TYPE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SERVICE_TASK_RESULT_VAR_NAME_WITH_DELEGATE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SERVICE_TASK_MISSING_IMPLEMENTATION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SERVICE_TASK_WEBSERVICE_INVALID_OPERATION_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SEND_TASK_INVALID_IMPLEMENTATION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SEND_TASK_INVALID_TYPE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SEND_TASK_WEBSERVICE_INVALID_OPERATION_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SCRIPT_TASK_MISSING_SCRIPT",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MAIL_TASK_NO_RECIPIENT",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MAIL_TASK_NO_CONTENT",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHELL_TASK_NO_COMMAND",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHELL_TASK_INVALID_PARAM",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EXCLUSIVE_GATEWAY_NO_OUTGOING_SEQ_FLOW",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EXCLUSIVE_GATEWAY_CONDITION_NOT_ALLOWED_ON_SINGLE_SEQ_FLOW",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EXCLUSIVE_GATEWAY_CONDITION_ON_DEFAULT_SEQ_FLOW",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EXCLUSIVE_GATEWAY_SEQ_FLOW_WITHOUT_CONDITIONS",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_GATEWAY_ONLY_CONNECTED_TO_INTERMEDIATE_EVENTS",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SUBPROCESS_MULTIPLE_START_EVENTS",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SUBPROCESS_START_EVENT_EVENT_DEFINITION_NOT_ALLOWED",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_SUBPROCESS_INVALID_START_EVENT_DEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "BOUNDARY_EVENT_NO_EVENT_DEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "BOUNDARY_EVENT_INVALID_EVENT_DEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "BOUNDARY_EVENT_CANCEL_ONLY_ON_TRANSACTION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "BOUNDARY_EVENT_MULTIPLE_CANCEL_ON_TRANSACTION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "INTERMEDIATE_CATCH_EVENT_NO_EVENTDEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "INTERMEDIATE_CATCH_EVENT_INVALID_EVENTDEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "ERROR_MISSING_ERROR_CODE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_MISSING_ERROR_CODE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "EVENT_TIMER_MISSING_CONFIGURATION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "THROW_EVENT_INVALID_EVENTDEFINITION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MULTI_INSTANCE_MISSING_COLLECTION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MESSAGE_MISSING_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MESSAGE_INVALID_ITEM_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MESSAGE_EVENT_MISSING_MESSAGE_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MESSAGE_EVENT_INVALID_MESSAGE_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "MESSAGE_EVENT_MULTIPLE_ON_BOUNDARY_SAME_MESSAGE_ID",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "OPERATION_INVALID_IN_MESSAGE_REFERENCE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SIGNAL_EVENT_MISSING_SIGNAL_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SIGNAL_EVENT_INVALID_SIGNAL_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "COMPENSATE_EVENT_INVALID_ACTIVITY_REF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "COMPENSATE_EVENT_MULTIPLE_ON_BOUNDARY",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SIGNAL_MISSING_ID",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SIGNAL_MISSING_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SIGNAL_DUPLICATE_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SIGNAL_INVALID_SCOPE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "DATA_ASSOCIATION_MISSING_TARGETREF",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "DATA_OBJECT_MISSING_NAME",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "END_EVENT_CANCEL_ONLY_INSIDE_TRANSACTION",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "DI_INVALID_REFERENCE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "DI_DOES_NOT_REFERENCE_FLOWNODE",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "DI_DOES_NOT_REFERENCE_SEQ_FLOW",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ProcessLevelValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "ProcessLevelValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Validator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.Validator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.activiti.validation.validator.Validator" ],
+    "constructors" : [ {
+      "name" : "ValidatorImpl",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ValidatorImpl",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.ValidatorImpl",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ValidatorSet",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ValidatorSet",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "removeValidator",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getValidators",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Collection"
+    }, {
+      "isStatic" : false,
+      "name" : "addValidator",
+      "params" : [ "org.activiti.validation.validator.Validator" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setValidators",
+      "params" : [ "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.ValidatorSet",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ValidatorSetFactory",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ValidatorSetFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "createActivitiExecutableProcessValidatorSet",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.activiti.validation.validator.ValidatorSet"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.ValidatorSetFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ValidatorSetNames",
+    "methods" : [ ],
+    "name" : "org.activiti.validation.validator.ValidatorSetNames",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "ACTIVITI_EXECUTABLE_PROCESS",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ActivitiEventListenerValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "ActivitiEventListenerValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ActivitiEventListenerValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "AssociationValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "AssociationValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.AssociationValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "BoundaryEventValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "BoundaryEventValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.BoundaryEventValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "BpmnModelValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "BpmnModelValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.BpmnModelValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DataObjectValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "DataObjectValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.DataObjectValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DiagramInterchangeInfoValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "DiagramInterchangeInfoValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.DiagramInterchangeInfoValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EndEventValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "EndEventValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.EndEventValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ErrorValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "ErrorValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ErrorValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EventGatewayValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "EventGatewayValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.EventGatewayValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EventSubprocessValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "EventSubprocessValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.EventSubprocessValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EventValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "EventValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.EventValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ExclusiveGatewayValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "ExclusiveGatewayValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validateExclusiveGateway",
+      "params" : [ "org.activiti.bpmn.model.Process", "org.activiti.bpmn.model.ExclusiveGateway", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ExclusiveGatewayValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ExecutionListenerValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "ExecutionListenerValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ExecutionListenerValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ExternalInvocationTaskValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "ExternalInvocationTaskValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ExternalInvocationTaskValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "FlowElementValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "FlowElementValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.FlowElementValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "IntermediateCatchEventValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "IntermediateCatchEventValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.IntermediateCatchEventValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "IntermediateThrowEventValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "IntermediateThrowEventValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.IntermediateThrowEventValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "MessageValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "MessageValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.MessageValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "OperationValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "OperationValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.OperationValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ScriptTaskValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "ScriptTaskValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ScriptTaskValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "SendTaskValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.impl.ExternalInvocationTaskValidator",
+    "simpleName" : "SendTaskValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.SendTaskValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "SequenceflowValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "SequenceflowValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.SequenceflowValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ServiceTaskValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.impl.ExternalInvocationTaskValidator",
+    "simpleName" : "ServiceTaskValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.ServiceTaskValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "SignalValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ValidatorImpl",
+    "simpleName" : "SignalValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.SignalValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "StartEventValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "StartEventValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.StartEventValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "SubprocessValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "SubprocessValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.SubprocessValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "UserTaskValidator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.activiti.validation.validator.ProcessLevelValidator",
+    "simpleName" : "UserTaskValidator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addError",
+      "params" : [ "java.util.List", "org.activiti.validation.ValidationError" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.validation.validator.impl.UserTaskValidator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.activiti.validation"
+}

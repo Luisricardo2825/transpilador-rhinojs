@@ -1,0 +1,150 @@
+{
+  "classes" : [ {
+    "implements" : [ "org.activiti.engine.impl.webservice.SyncWebServiceClient" ],
+    "constructors" : [ {
+      "name" : "CxfWebServiceClient",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "CxfWebServiceClient",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "send",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.engine.impl.webservice.CxfWebServiceClient",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.activiti.engine.impl.webservice.SyncWebServiceClientFactory" ],
+    "constructors" : [ {
+      "name" : "CxfWebServiceClientFactory",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "CxfWebServiceClientFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "create",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.activiti.engine.impl.webservice.SyncWebServiceClient"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.engine.impl.webservice.CxfWebServiceClientFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.activiti.engine.impl.webservice"
+}

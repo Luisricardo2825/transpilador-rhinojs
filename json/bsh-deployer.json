@@ -1,0 +1,80 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TestInterface",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "returnString",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "returnInt",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getRWInt",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setWOString",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "doSimple",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setRWInt",
+      "params" : [ "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setWOInt",
+      "params" : [ "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getROString",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setRWString",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getROInt",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getRWString",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    } ],
+    "name" : "org.jboss.varia.deployment.TestInterface",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  } ],
+  "group" : "org.jboss.varia.deployment"
+}

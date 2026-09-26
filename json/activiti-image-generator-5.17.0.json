@@ -1,0 +1,945 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ProcessDiagramGenerator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "generateJpgDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateJpgDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generatePngDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generatePngDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.ClassLoader", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.ClassLoader" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List", "java.lang.String", "java.lang.String", "java.lang.ClassLoader", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generatePngImage",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "double" ],
+      "isAbstract" : true,
+      "returnType" : "java.awt.image.BufferedImage"
+    } ],
+    "name" : "org.activiti.image.ProcessDiagramGenerator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ActivitiImageException",
+      "params" : [ "java.lang.String", "java.lang.Throwable" ]
+    }, {
+      "name" : "ActivitiImageException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "ActivitiImageException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.image.exception.ActivitiImageException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DefaultProcessDiagramCanvas",
+      "params" : [ "int", "int", "int", "int", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.ClassLoader" ]
+    }, {
+      "name" : "DefaultProcessDiagramCanvas",
+      "params" : [ "int", "int", "int", "int", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultProcessDiagramCanvas",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "drawArrowHead",
+      "params" : [ "java.awt.geom.Line2D$Double", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawConnection",
+      "params" : [ "int[]", "int[]", "boolean", "boolean", "java.lang.String", "org.activiti.bpmn.model.AssociationDirection", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawTask",
+      "params" : [ "java.awt.image.BufferedImage", "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawPoolOrLane",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawStartEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "java.awt.image.BufferedImage", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawNoneEndEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "generateImage",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSequenceflow",
+      "params" : [ "int", "int", "int", "int", "boolean", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSequenceflow",
+      "params" : [ "int", "int", "int", "int", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSequenceflow",
+      "params" : [ "int[]", "int[]", "boolean", "boolean", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawAssociation",
+      "params" : [ "int[]", "int[]", "org.activiti.bpmn.model.AssociationDirection", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawGateway",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawServiceTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawHighLight",
+      "params" : [ "int", "int", "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSendTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawReceiveTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCamelTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawManualTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawLabel",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawLabel",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawMuleTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawUserTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawScriptTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawExclusiveGateway",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawEventBasedGateway",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingCompensateEvent",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingCompensateEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawInclusiveGateway",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawThrowingCompensateEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawMultiInstanceMarker",
+      "params" : [ "boolean", "int", "int", "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawTextAnnotation",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawErrorEndEvent",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawErrorEndEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "connectionPerfectionizer",
+      "params" : [ "org.activiti.image.impl.DefaultProcessDiagramCanvas$SHAPE_TYPE", "org.activiti.image.impl.DefaultProcessDiagramCanvas$SHAPE_TYPE", "org.activiti.bpmn.model.GraphicInfo", "org.activiti.bpmn.model.GraphicInfo", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "drawExpandedSubProcess",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "java.lang.Boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawErrorStartEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawTimerStartEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingTimerEvent",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingTimerEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingErrorEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingErrorEvent",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSequenceflowWithoutArrow",
+      "params" : [ "int", "int", "int", "int", "boolean", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSequenceflowWithoutArrow",
+      "params" : [ "int", "int", "int", "int", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingMessageEvent",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingMessageEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCollapsedMarker",
+      "params" : [ "int", "int", "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawMessageStartEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "boolean", "java.awt.image.BufferedImage", "java.lang.String", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingSignalEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCatchingSignalEvent",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "boolean", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawThrowingSignalEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawBusinessRuleTask",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "generateBufferedImage",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.image.BufferedImage"
+    }, {
+      "isStatic" : false,
+      "name" : "drawSignalStartEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawThrowingNoneEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCollapsedCallActivity",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawDefaultSequenceFlowIndicator",
+      "params" : [ "java.awt.geom.Line2D$Double", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawCollapsedSubProcess",
+      "params" : [ "java.lang.String", "org.activiti.bpmn.model.GraphicInfo", "java.lang.Boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawActivityMarkers",
+      "params" : [ "int", "int", "int", "int", "boolean", "boolean", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawNoneStartEvent",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawParallelGateway",
+      "params" : [ "org.activiti.bpmn.model.GraphicInfo", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "drawConditionalSequenceFlowIndicator",
+      "params" : [ "java.awt.geom.Line2D$Double", "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "close",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initialize",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.image.impl.DefaultProcessDiagramCanvas",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.activiti.image.ProcessDiagramGenerator" ],
+    "constructors" : [ {
+      "name" : "DefaultProcessDiagramGenerator",
+      "params" : [ "double" ]
+    }, {
+      "name" : "DefaultProcessDiagramGenerator",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultProcessDiagramGenerator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "generateImage",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List", "java.lang.String", "java.lang.String", "java.lang.ClassLoader", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.image.BufferedImage"
+    }, {
+      "isStatic" : false,
+      "name" : "generateImage",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.image.BufferedImage"
+    }, {
+      "isStatic" : false,
+      "name" : "setActivityDrawInstructions",
+      "params" : [ "java.util.Map" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getActivityDrawInstructions",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "getArtifactDrawInstructions",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "setArtifactDrawInstructions",
+      "params" : [ "java.util.Map" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "generateJpgDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateJpgDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generatePngDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generatePngDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List", "java.lang.String", "java.lang.String", "java.lang.ClassLoader", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.lang.String", "java.lang.String", "java.lang.ClassLoader", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generateDiagram",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "java.lang.String", "java.util.List", "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "generatePngImage",
+      "params" : [ "org.activiti.bpmn.model.BpmnModel", "double" ],
+      "isAbstract" : false,
+      "returnType" : "java.awt.image.BufferedImage"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.image.impl.DefaultProcessDiagramGenerator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ReflectUtil",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ReflectUtil",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "getResourceAsStream",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : true,
+      "name" : "getResourceAsStream",
+      "params" : [ "java.lang.String", "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.activiti.image.util.ReflectUtil",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.activiti.image"
+}

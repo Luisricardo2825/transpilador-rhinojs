@@ -1,0 +1,633 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DuplicateServiceException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Exception",
+    "simpleName" : "DuplicateServiceException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.DuplicateServiceException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "java.lang.Cloneable" ],
+    "constructors" : [ {
+      "name" : "ServiceBinding",
+      "params" : [ "java.lang.String", "java.lang.String", "int" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceBinding",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setPort",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setHostName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setBindAddress",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setBindAddress",
+      "params" : [ "java.net.InetAddress" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getBindAddress",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.net.InetAddress"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "clone",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPort",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getHostName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.ServiceBinding",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "java.lang.Cloneable" ],
+    "constructors" : [ {
+      "name" : "ServiceConfig",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceConfig",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setBindings",
+      "params" : [ "org.jboss.services.binding.ServiceBinding[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getBindings",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jboss.services.binding.ServiceBinding[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getServiceName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setServiceConfigDelegateClassName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getServiceConfigDelegateClassName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setServiceName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setServiceConfigDelegateConfig",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getServiceConfigDelegateConfig",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "clone",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.ServiceConfig",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServicesConfigDelegate",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "applyConfig",
+      "params" : [ "org.jboss.services.binding.ServiceConfig", "javax.management.MBeanServer" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.ServicesConfigDelegate",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServicesStore",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "removeService",
+      "params" : [ "java.lang.String", "javax.management.ObjectName" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addService",
+      "params" : [ "java.lang.String", "javax.management.ObjectName", "org.jboss.services.binding.ServiceConfig" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getService",
+      "params" : [ "java.lang.String", "javax.management.ObjectName" ],
+      "isAbstract" : true,
+      "returnType" : "org.jboss.services.binding.ServiceConfig"
+    }, {
+      "isStatic" : false,
+      "name" : "load",
+      "params" : [ "java.net.URL" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "store",
+      "params" : [ "java.net.URL" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.ServicesStore",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServicesStoreFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.jboss.services.binding.ServicesStore"
+    } ],
+    "name" : "org.jboss.services.binding.ServicesStoreFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.jboss.services.binding.ServicesStore" ],
+    "constructors" : [ {
+      "name" : "XMLServicesStore",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "XMLServicesStore",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "removeService",
+      "params" : [ "java.lang.String", "javax.management.ObjectName" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addService",
+      "params" : [ "java.lang.String", "javax.management.ObjectName", "org.jboss.services.binding.ServiceConfig" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getService",
+      "params" : [ "java.lang.String", "javax.management.ObjectName" ],
+      "isAbstract" : false,
+      "returnType" : "org.jboss.services.binding.ServiceConfig"
+    }, {
+      "isStatic" : false,
+      "name" : "load",
+      "params" : [ "java.net.URL" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "store",
+      "params" : [ "java.net.URL" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.XMLServicesStore",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.jboss.services.binding.ServicesStoreFactory" ],
+    "constructors" : [ {
+      "name" : "XMLServicesStoreFactory",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "XMLServicesStoreFactory",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jboss.services.binding.ServicesStore"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.services.binding.XMLServicesStoreFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.jboss.services.binding"
+}

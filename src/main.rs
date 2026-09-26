@@ -1,13 +1,24 @@
-use clap::Parser as OtherParser;
-use fancy_regex::Regex;
-use pest::Parser;
 use std::{
     io::{self, Write},
     path::{Path, PathBuf},
+    sync::Mutex,
+};
+
+use anyhow::Context;
+use clap::Parser as ClapParser;
+use indicatif::{MultiProgress, ProgressBar, ProgressStyle};
+use rayon::prelude::*;
+use swc::try_with_handler;
+use swc_ecma_ast::Pass;
+
+use swc_common::{
+    source_map::SourceMap,
+    sync::{Lazy, Lrc},
+    FileName, Mark, GLOBALS,
 };
 
 /// Conversor de javascript
-#[derive(OtherParser, Debug)]
+#[derive(ClapParser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
     /// Path to the file or directory to read
@@ -16,380 +27,382 @@ struct Args {
     #[arg(default_value_t = String::from("dist"))]
     /// Path to out dir
     out: String,
+
+    #[arg(short, long, default_value_t = false)]
+    /// Minify the output
+    minify: bool,
+
+    /// Add polyfills
+    #[arg(short, long, default_value_t = false)]
+    polyfill: bool,
+
+    /// Add custom import path alias
+    #[arg(short, long, default_value_t = String::from("@Java/"))]
+    alias: String,
 }
 
-#[derive(pest_derive::Parser)]
-#[grammar = "grammar.pest"]
-pub struct LangParser;
+static ALIAS: Lazy<Mutex<Option<String>>> = Lazy::new(|| Mutex::new(None));
+
+// Get /js/pollyfill.js file
+fn get_polyfill() -> String {
+    let pollyfill = include_str!("./js/pollyfill.js");
+    format!("/*pollyfill start*/ {} /*pollyfill end*/\n", pollyfill)
+}
 
 fn main() -> io::Result<()> {
+    let m = MultiProgress::new();
+    let sty = ProgressStyle::with_template(
+        "[{elapsed_precise}] {bar:40.cyan/blue} {pos:>7}/{len:7} {msg}",
+    )
+    .unwrap()
+    .progress_chars("##-");
+
     let args: Args = Args::parse();
 
+    *ALIAS.lock().unwrap() = Some(args.alias.clone());
+    let start = std::time::Instant::now();
+
+    let n = 200;
+    let pb: ProgressBar = m.add(ProgressBar::new(n));
+    pb.set_style(sty.clone());
+
+    let args_path = args.path.clone();
+
     if !args.path.is_dir() {
-        convert(args.path, args.out)?;
+        pb.set_length(1);
+        pb.inc(1);
+        convert(&pb, &args, None)?;
+        pb.finish_with_message("Done");
+        println!("Time: {:?}", start.elapsed());
 
         return Ok(());
     }
 
+    let paths: Vec<PathBuf> = get_files(args_path)?;
+    pb.set_length(paths.len() as u64);
+
+    paths.par_iter().try_for_each(|path| {
+        pb.set_message(path.display().to_string());
+        convert(&pb, &args, Some(path))?;
+        pb.inc(1);
+        Ok::<(), io::Error>(())
+    })?;
+
+    pb.finish_with_message("Done");
+    Ok(())
+}
+
+fn get_files(path: PathBuf) -> Result<Vec<PathBuf>, io::Error> {
     let mut paths = vec![];
-    for entry in std::fs::read_dir(args.path.clone())? {
+    for entry in std::fs::read_dir(path)? {
         let entry = entry?;
         let path = entry.path();
         if path.is_dir() {
+            // Get sub folders
+            let sub_paths = get_files(path)?;
+            paths.extend(sub_paths);
             continue;
         }
-        paths.push(path);
+
+        // Check if is js or ts file
+        if !matches!(
+            path.extension().and_then(|extension| extension.to_str()),
+            Some("js" | "ts")
+        ) {
+            continue;
+        }
+        // Run the conver concurrently
+        paths.push(path)
     }
-    for path in paths {
-        convert(path, args.out.clone())?;
+    Ok(paths)
+}
+
+fn convert(pb: &ProgressBar, args: &Args, path: Option<&PathBuf>) -> Result<(), io::Error> {
+    let out = &args.out;
+    let path = match path {
+        Some(path) => path,
+        None => &args.path,
+    };
+    let input_base = args.path.clone();
+    let minify = args.minify;
+    let polyfills = args.polyfill;
+    let unparsed_file = std::fs::read_to_string(path.clone())?;
+    let mut code = unparsed_file;
+    // cria pasta de saída
+    let out_dir = PathBuf::from(out);
+
+    // calcula o caminho relativo em relação à pasta de entrada
+    let relative = if input_base.is_file() {
+        input_base
+            .file_name()
+            .map(PathBuf::from)
+            .unwrap_or_default()
+    } else {
+        path.strip_prefix(input_base).unwrap_or(path).to_owned()
+    };
+
+    // monta o caminho final
+    let mut out_filename = out_dir.join(relative);
+
+    // força extensão para .js
+    out_filename.set_extension("js");
+
+    // cria diretórios se necessário
+    if let Some(parent) = out_filename.parent() {
+        std::fs::create_dir_all(parent)?;
     }
+
+    if polyfills {
+        let pollyfill = get_polyfill();
+
+        code = pollyfill + code.as_str();
+    }
+    write_file(out_filename.to_str().unwrap(), code)?;
+
+    // compila para es3
+    let code = to_es3(
+        out_filename.to_str().unwrap(),
+        path.extension().is_some_and(|extension| extension == "ts"),
+        minify,
+        pb,
+    )
+    .map_err(io::Error::other)?;
+
+    write_file(out_filename.to_str().unwrap(), code)?;
+
     Ok(())
 }
 
-fn convert(mut path: PathBuf, out: String) -> Result<(), io::Error> {
-    let unparsed_file = std::fs::read_to_string(path.clone()).expect("Erro reading file");
-    let mut code = vec![];
-
-    // Process line by line
-
-    let default_imports = vec![[
-        Values::String("System".to_owned()),
-        Values::String("java.lang.System".to_owned()),
-    ]];
-
-    code.push("// Default imports\n".to_string());
-    for ele in default_imports {
-        let result = resolve(&ele[0], &ele[1].to_string()).to_string();
-
-        code.push(result);
-    }
-    code.push("\n".to_string());
-    for ele in unparsed_file.split("\n") {
-        let regex = Regex::new(r#"(?=[^\"`']);[^\w]*"#).unwrap();
-
-        let result = regex.is_match(ele).unwrap();
-        if result {
-            let result = regex.replace_all(ele, "\n").to_string();
-            for ele in result.split("\n") {
-                let ele = ele.trim().to_owned();
-                if ele.is_empty() {
-                    continue;
-                }
-                process_line(&(ele + ";"), &mut code);
-            }
-            continue;
-        }
-        process_line(ele, &mut code);
-    }
-    path.set_extension("js");
-    let file_name = path.file_name().unwrap().to_str().unwrap();
-    // Create out dir
-    std::fs::create_dir_all(format!("./{}", out)).expect("Erro ao criar pasta de saida");
-    // Implement swc to transpile to js
-    let out_filename = format!("{}/{}", out, file_name);
-    let code = ts_to_js(&out_filename);
-
-    // Create out file
-    let mut out = std::fs::File::create(&out_filename).expect("Erro ao criar arquivo");
-    out.write_all(code.as_bytes())
-        .expect("Erro ao escrever arquivo");
-    out.flush()?;
-
-    let minified_code = minify_js(&out_filename);
-    let mut out = std::fs::File::create(out_filename).expect("Erro ao criar arquivo");
-    out.write_all(minified_code.as_bytes())
-        .expect("Erro ao escrever arquivo");
-    out.flush()?;
-    Ok(())
+fn write_file(file_name: &str, code: String) -> io::Result<()> {
+    std::fs::File::create(file_name)?.write_all(code.as_bytes())
 }
-
-fn process_line(ele: &str, code: &mut Vec<String>) {
-    let pairs = LangParser::parse(Rule::program, &ele).expect("Erro parsing");
-
-    let size = pairs.len();
-    for (i, pair) in pairs.enumerate() {
-        let str = pair.as_str();
-        if str.len() <= 0 {
-            continue;
-        }
-        let result = resolve_rule(pair);
-
-        // End of file
-        if i < size - 1 {
-            code.push(result.to_string());
-            continue;
-        }
-
-        code.push(result.to_string() + ";");
-    }
-}
-
-#[derive(Debug, Clone)]
-enum Values {
-    String(String),
-    Mutiple(Vec<Values>),
-    Rename {
-        old: String,
-        new: String,
-    },
-    DefaultWithMutiple {
-        mutiple: Vec<Values>,
-        default: String,
-    },
-}
-fn resolve_rule(primary: pest::iterators::Pair<'_, Rule>) -> Values {
-    match primary.as_rule() {
-        Rule::import => {
-            let mut pair = primary.into_inner();
-            let vars = pair.next().unwrap();
-            let source = pair.next().unwrap();
-            let var = resolve_rule(vars);
-            let source = resolve_rule(source);
-            let source = match source {
-                Values::String(val) => val,
-                Values::Mutiple(_) => todo!(),
-                Values::Rename { .. } => todo!(),
-                Values::DefaultWithMutiple { .. } => todo!(),
-            };
-
-            let result = resolve(&var, &source);
-
-            Values::String(result)
-        }
-        Rule::ident => Values::String(String::from(primary.as_str())),
-        Rule::source => {
-            let str = primary.as_str().to_owned();
-            let str = &str[1..str.len() - 1];
-
-            let str = str.replace("\\\\", "\\");
-            let str = str.replace("\\\"", "\"");
-            let str = str.replace("\\n", "\n");
-            let str = str.replace("\\r", "\r");
-            let str = str.replace("\\t", "\t");
-            Values::String(str)
-        }
-        Rule::rename => {
-            let mut pair = primary.into_inner();
-            let past_name = pair.next().unwrap();
-            let name = pair.next().unwrap();
-            Values::Rename {
-                new: name.as_str().to_string(),
-                old: past_name.as_str().to_string(),
-            }
-        }
-        Rule::destructuring => {
-            let mut pair = primary.into_inner();
-            let mut idents = vec![];
-            loop {
-                let ident = pair.next();
-                if ident.is_none() {
-                    break;
-                }
-                let ident = ident.unwrap();
-                let ident = resolve_rule(ident);
-                idents.push(ident)
-            }
-            Values::Mutiple(idents)
-        }
-        Rule::defaultWithDestructuring => {
-            let mut pair = primary.into_inner();
-            let ident = pair.next().unwrap();
-            let destruct = pair.next().unwrap();
-            let destruct = resolve_rule(destruct).to_multiple();
-            Values::DefaultWithMutiple {
-                default: ident.as_str().to_string(),
-                mutiple: destruct,
-            }
-        }
-        Rule::directImport => {
-            let mut pair = primary.into_inner();
-            let source = pair.next().unwrap();
-            let source = resolve_rule(source);
-            let source = match source {
-                Values::String(val) => val,
-                Values::Mutiple(_) => todo!(),
-                Values::Rename { .. } => todo!(),
-                Values::DefaultWithMutiple { .. } => todo!(),
-            };
-            let name = source.split(".").last().unwrap();
-            if source.trim().to_lowercase().starts_with("java.") {
-                return Values::String(format!("const {name} = {};", source));
-            }
-            Values::String(format!("const {name} = Packages.{source};"))
-        }
-        Rule::rest => Values::String(String::from(primary.as_str())),
-        rule => unreachable!("Expr::parse expected atom, found {:?}", rule),
-    }
-}
-
-fn resolve(var: &Values, source: &String) -> String {
-    if !source.contains(".") {
-        return "".to_owned();
-    }
-    match var {
-        Values::String(varname) => {
-            if source.trim().to_lowercase().starts_with("java.") {
-                return format!("const {varname} = {source};");
-            }
-            format!("const {} = Packages.{};", varname, source)
-        }
-        Values::Mutiple(vars) => {
-            let mut result = String::new();
-            for (i, var) in vars.iter().enumerate() {
-                if var.is_rename() {
-                    let (old, new) = var.to_rename();
-                    if source.trim().to_lowercase().starts_with("java.") {
-                        result.push_str(&format!("const {new} = {source}.{old}"));
-                        continue;
-                    }
-                    result.push_str(&format!("const {new} = Packages.{source}.{old}"));
-                    continue;
-                }
-
-                if source.trim().to_lowercase().starts_with("java.") {
-                    result.push_str(&format!(
-                        "const {} = {}.{};",
-                        var.to_string(),
-                        source,
-                        var.to_string()
-                    ));
-                } else {
-                    result.push_str(&format!(
-                        "const {} = Packages.{}.{};",
-                        var.to_string(),
-                        source,
-                        var.to_string()
-                    ));
-                }
-
-                if i < vars.len() - 1 {
-                    result.push_str("\n");
-                }
-            }
-            result
-        }
-        Values::Rename { new, old } => {
-            if source.trim().to_lowercase().starts_with("java.") {
-                format!("const {} = Packages.{}.{};", new, source, old)
-            } else {
-                format!("const {new} = {source}.{old};")
-            }
-        }
-        Values::DefaultWithMutiple { mutiple, default } => {
-            let first = resolve(&Values::String(default.to_string()), source);
-            let results = resolve(&Values::Mutiple(mutiple.to_owned()), source);
-            let mut result = String::new();
-
-            result.push_str(&first);
-            result.push_str("\n");
-            result.push_str(&results);
-
-            result
-        }
-    }
-}
-
-impl Values {
-    fn to_string(&self) -> String {
-        match self {
-            Values::String(val) => val.to_owned(),
-            Values::Mutiple(vals) => {
-                let mut result = String::new();
-                for (i, val) in vals.iter().enumerate() {
-                    result.push_str(&val.to_string());
-                    if i < vals.len() - 1 {
-                        result.push_str(", ");
-                    }
-                }
-                result
-            }
-            Values::Rename { new, old } => format!("{} as {}", new, old),
-            Values::DefaultWithMutiple { mutiple, default } => {
-                let mut result = String::new();
-                for (i, val) in mutiple.iter().enumerate() {
-                    result.push_str(&val.to_string());
-                    if i < mutiple.len() - 1 {
-                        result.push_str(", ");
-                    }
-                }
-                format!("{} as {}", result, default)
-            }
-        }
-    }
-    fn is_rename(&self) -> bool {
-        match self {
-            Values::Rename { .. } => true,
-            _ => false,
-        }
-    }
-    fn to_rename(&self) -> (String, String) {
-        match self {
-            Values::Rename { old, new } => (old.to_string(), new.to_string()),
-            _ => panic!("Not a rename"),
-        }
-    }
-    fn to_multiple(&self) -> Vec<Values> {
-        match self {
-            Values::Mutiple(vals) => vals.to_owned(),
-            _ => panic!("Not a multiple"),
-        }
-    }
-}
-
-use anyhow::Context;
-use swc::{config::JsMinifyOptions, try_with_handler, BoolOrDataConfig, JsMinifyExtras};
-use swc_common::{source_map::SourceMap, sync::Lrc, GLOBALS};
-
-/// Transforms typescript to javascript. Returns tuple (js string, source map)
-fn ts_to_js(filename: &str) -> String {
+fn rewrite_java_imports(code: &str) -> anyhow::Result<String> {
     let cm = Lrc::<SourceMap>::default();
-
-    let c = swc::Compiler::new(cm.clone());
-    let output = GLOBALS
+    let compiler = swc::Compiler::new(cm.clone());
+    let fm = cm.new_source_file(FileName::Custom("input.ts".into()).into(), code.to_owned());
+    let program = GLOBALS
         .set(&Default::default(), || {
             try_with_handler(cm.clone(), Default::default(), |handler| {
-                let fm = cm
-                    .load_file(Path::new(filename))
-                    .expect("failed to load file");
-
-                c.process_js_file(fm, handler, &Default::default())
-                    .context("failed to process file")
-            })
-        })
-        .unwrap();
-
-    output.code
-}
-
-// Import Arc
-
-use std::sync::Arc;
-/// Transforms typescript to javascript. Returns tuple (js string, source map)
-fn minify_js(filename: &str) -> String {
-    let cm = Arc::<SourceMap>::default();
-
-    let c = swc::Compiler::new(cm.clone());
-    let output = GLOBALS
-        .set(&Default::default(), || {
-            try_with_handler(cm.clone(), Default::default(), |handler| {
-                let fm = cm
-                    .load_file(Path::new(filename))
-                    .expect("failed to load file");
-
-                c.minify(
+                compiler.parse_js(
                     fm,
                     handler,
-                    &JsMinifyOptions {
-                        compress: BoolOrDataConfig::from_bool(true),
-                        mangle: BoolOrDataConfig::from_bool(true),
-                        ..Default::default()
-                    },
-                    // Mangle name cache example. You may not need this.
-                    JsMinifyExtras::default(),
+                    swc_ecma_ast::EsVersion::EsNext,
+                    swc_ecma_parser::Syntax::Typescript(Default::default()),
+                    swc::config::IsModule::Unknown,
+                    None,
                 )
-                .context("failed to minify")
             })
         })
+        .map_err(|error| anyhow::anyhow!("{error:?}"))?;
+    let swc_ecma_ast::Program::Module(module) = program else {
+        return Ok(code.to_owned());
+    };
+    let alias = ALIAS.lock().unwrap().clone().unwrap_or_default();
+    let mut replacements = Vec::new();
+    for item in module.body {
+        let swc_ecma_ast::ModuleItem::ModuleDecl(swc_ecma_ast::ModuleDecl::Import(import)) = item
+        else {
+            continue;
+        };
+        let source = import.src.value.as_str().unwrap().to_string();
+        if !source.starts_with(&alias) {
+            continue;
+        }
+        if import.type_only {
+            replacements.push((
+                import.span.lo.0 as usize - 1,
+                import.span.hi.0 as usize - 1,
+                String::new(),
+            ));
+            continue;
+        }
+        let reference = java_reference(&source, &alias);
+        let mut declarations = Vec::new();
+        for specifier in import.specifiers {
+            if specifier.is_type_only() {
+                continue;
+            }
+            match specifier {
+                swc_ecma_ast::ImportSpecifier::Default(specifier) => {
+                    declarations.push(format!("const {} = {reference};", specifier.local.sym))
+                }
+                swc_ecma_ast::ImportSpecifier::Namespace(specifier) => {
+                    declarations.push(format!("const {} = {reference};", specifier.local.sym))
+                }
+                swc_ecma_ast::ImportSpecifier::Named(specifier) => {
+                    let imported = match specifier.imported {
+                        Some(swc_ecma_ast::ModuleExportName::Ident(name)) => name.sym.to_string(),
+                        Some(swc_ecma_ast::ModuleExportName::Str(name)) => {
+                            format!("[{:?}]", name.value)
+                        }
+                        None => specifier.local.sym.to_string(),
+                    };
+                    let access = if imported.starts_with('[') {
+                        imported
+                    } else {
+                        format!(".{imported}")
+                    };
+                    declarations.push(format!(
+                        "const {} = {reference}{access};",
+                        specifier.local.sym
+                    ));
+                }
+            }
+        }
+        if declarations.is_empty() {
+            declarations.push(format!("{reference};"));
+        }
+        replacements.push((
+            import.span.lo.0 as usize - 1,
+            import.span.hi.0 as usize - 1,
+            declarations.join("\n"),
+        ));
+    }
+    let mut output = code.to_owned();
+    replacements.sort_by_key(|(start, _, _)| *start);
+    for (start, end, replacement) in replacements.into_iter().rev() {
+        output.replace_range(start..end, &replacement);
+    }
+    Ok(output)
+}
+
+fn java_reference(source: &str, alias: &str) -> String {
+    let class_path = source
+        .strip_prefix(alias)
+        .unwrap_or(source)
+        .trim()
+        .replace('/', ".");
+    if class_path.to_ascii_lowercase().starts_with("java.") {
+        class_path
+    } else {
+        format!("Packages.{class_path}")
+    }
+}
+
+/// Transforms typescript to javascript. Returns tuple (js string, source map)
+fn to_es3(
+    filename: &str,
+    is_typescript: bool,
+    minify: bool,
+    pb: &ProgressBar,
+) -> anyhow::Result<String> {
+    let cm = Lrc::<SourceMap>::default();
+    let compiler = swc::Compiler::new(cm.clone());
+    let output = GLOBALS.set(&Default::default(), || {
+        try_with_handler(cm.clone(), Default::default(), |handler| {
+            let fm = cm
+                .load_file(Path::new(filename))
+                .expect("failed to load file");
+            if is_typescript {
+                pb.set_message(format!("Compiling {filename}"));
+                pb.inc(1);
+            }
+            let program = compiler
+                .parse_js(
+                    fm,
+                    handler,
+                    swc_ecma_ast::EsVersion::Es5,
+                    swc_ecma_parser::Syntax::Typescript(Default::default()),
+                    swc::config::IsModule::Unknown,
+                    None,
+                )
+                .context(format!("failed to parse file {}", filename))?;
+
+            let strip_unresolved_mark = Mark::new();
+            let strip_top_level_mark = Mark::new();
+            let stripped = compiler.run_transform(handler, false, || {
+                let mut program = program;
+                swc_ecma_transforms_base::resolver(
+                    strip_unresolved_mark,
+                    strip_top_level_mark,
+                    true,
+                )
+                .process(&mut program);
+                swc_ecma_transforms_typescript::strip(strip_unresolved_mark, strip_top_level_mark)
+                    .process(&mut program);
+                program
+            });
+            let stripped_code = compiler.print(&stripped, Default::default())?.code;
+            let rewritten = rewrite_java_imports(&stripped_code)?;
+            let fm = cm.new_source_file(FileName::Custom(filename.into()).into(), rewritten);
+            let program = compiler
+                .parse_js(
+                    fm,
+                    handler,
+                    swc_ecma_ast::EsVersion::Es5,
+                    swc_ecma_parser::Syntax::Es(Default::default()),
+                    swc::config::IsModule::Unknown,
+                    None,
+                )
+                .context(format!("failed to parse rewritten file {}", filename))?;
+            let unresolved_mark = Mark::new();
+            let top_level_mark = Mark::new();
+            let program = compiler.run_transform(handler, false, || {
+                let mut program = program;
+                swc_ecma_transforms_base::resolver(unresolved_mark, top_level_mark, true)
+                    .process(&mut program);
+                swc_ecma_preset_env::transform_from_es_version(
+                    unresolved_mark,
+                    None::<swc_common::comments::SingleThreadedComments>,
+                    swc_ecma_ast::EsVersion::Es5,
+                    swc_ecma_transforms_base::assumptions::Assumptions::default(),
+                    false,
+                )
+                .process(&mut program);
+                swc_ecma_transforms_base::helpers::inject_helpers(top_level_mark)
+                    .process(&mut program);
+                swc_ecma_transforms_base::fixer::fixer(None).process(&mut program);
+                program
+            });
+            let output = compiler.print(&program, Default::default())?;
+
+            if minify {
+                Ok(compiler
+                    .minify(
+                        cm.new_source_file(
+                            FileName::Custom("output.js".into()).into(),
+                            output.code,
+                        ),
+                        handler,
+                        &Default::default(),
+                        Default::default(),
+                    )?
+                    .code)
+            } else {
+                Ok(output.code)
+            }
+        })
+    });
+
+    output.map_err(|error| anyhow::anyhow!("Error processing {filename}: {error}"))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn rewrites_all_static_java_import_forms() {
+        *ALIAS.lock().unwrap() = Some("@Java/".to_owned());
+        let output = rewrite_java_imports(
+            r#"
+                import DefaultClass from "@Java/br/com/example/DefaultClass";
+                import * as Example from "@Java/br/com/example";
+                import { Foo, Bar as LocalBar, type TypeOnly } from "@Java/br/com/example";
+                import JavaString from "@Java/java/lang/String";
+                import "@Java/br/com/example/SideEffect";
+                import type { CompileOnly } from "@Java/br/com/example";
+            "#,
+        )
         .unwrap();
-    output.code
+
+        assert!(output.contains("const DefaultClass = Packages.br.com.example.DefaultClass;"));
+        assert!(output.contains("const Example = Packages.br.com.example;"));
+        assert!(output.contains("const Foo = Packages.br.com.example.Foo;"));
+        assert!(output.contains("const LocalBar = Packages.br.com.example.Bar;"));
+        assert!(output.contains("const JavaString = java.lang.String;"));
+        assert!(output.contains("Packages.br.com.example.SideEffect;"));
+        assert!(!output.contains("TypeOnly"));
+        assert!(!output.contains("CompileOnly"));
+    }
 }

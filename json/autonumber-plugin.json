@@ -1,0 +1,388 @@
+{
+  "classes" : [ {
+    "implements" : [ "javax.ejb.EJBObject" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AutoNumber",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getValue",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Integer"
+    }, {
+      "isStatic" : false,
+      "name" : "setValue",
+      "params" : [ "java.lang.Integer" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrimaryKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "isIdentical",
+      "params" : [ "javax.ejb.EJBObject" ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getEJBHome",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "javax.ejb.EJBHome"
+    }, {
+      "isStatic" : false,
+      "name" : "remove",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getHandle",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "javax.ejb.Handle"
+    } ],
+    "name" : "org.jboss.varia.autonumber.AutoNumber",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "javax.ejb.EntityBean" ],
+    "constructors" : [ {
+      "name" : "AutoNumberEJB",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AutoNumberEJB",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "ejbActivate",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbPostCreate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbCreate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbStore",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbRemove",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbLoad",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbPassivate",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setEntityContext",
+      "params" : [ "javax.ejb.EntityContext" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "unsetEntityContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getValue",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Integer"
+    }, {
+      "isStatic" : false,
+      "name" : "setValue",
+      "params" : [ "java.lang.Integer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.varia.autonumber.AutoNumberEJB",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : false,
+      "name" : "name",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "value",
+      "type" : "java.lang.Integer"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "javax.ejb.EntityBean" ],
+    "constructors" : [ {
+      "name" : "AutoNumberEJB2",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AutoNumberEJB2",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "ejbActivate",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbPostCreate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbCreate",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbStore",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbRemove",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbLoad",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ejbPassivate",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setEntityContext",
+      "params" : [ "javax.ejb.EntityContext" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "unsetEntityContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getValue",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Integer"
+    }, {
+      "isStatic" : false,
+      "name" : "setName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setValue",
+      "params" : [ "java.lang.Integer" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.varia.autonumber.AutoNumberEJB2",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "javax.ejb.EJBHome" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "AutoNumberHome",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "findByPrimaryKey",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.jboss.varia.autonumber.AutoNumber"
+    }, {
+      "isStatic" : false,
+      "name" : "create",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.jboss.varia.autonumber.AutoNumber"
+    }, {
+      "isStatic" : false,
+      "name" : "getHomeHandle",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "javax.ejb.HomeHandle"
+    }, {
+      "isStatic" : false,
+      "name" : "getEJBMetaData",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "javax.ejb.EJBMetaData"
+    }, {
+      "isStatic" : false,
+      "name" : "remove",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "remove",
+      "params" : [ "javax.ejb.Handle" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.jboss.varia.autonumber.AutoNumberHome",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  } ],
+  "group" : "org.jboss.varia.autonumber"
+}

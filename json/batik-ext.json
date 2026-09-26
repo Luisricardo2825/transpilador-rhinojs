@@ -1,0 +1,1265 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ElementTraversal",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getFirstElementChild",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getNextElementSibling",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildElementCount",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getPreviousElementSibling",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getLastElementChild",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Element"
+    } ],
+    "name" : "org.w3c.dom.ElementTraversal",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.Event" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "CustomEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getDetail",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "initCustomEventNS",
+      "params" : [ "java.lang.String", "java.lang.String", "boolean", "boolean", "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.CustomEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DocumentEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "createEvent",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.Event"
+    } ],
+    "name" : "org.w3c.dom.events.DocumentEvent",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Event",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.Event",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EventException",
+      "params" : [ "short", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "EventException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.w3c.dom.events.EventException",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : false,
+      "name" : "code",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "UNSPECIFIED_EVENT_TYPE_ERR",
+      "type" : "short"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "EventListener",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "handleEvent",
+      "params" : [ "org.w3c.dom.events.Event" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.w3c.dom.events.EventListener",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "EventTarget",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "dispatchEvent",
+      "params" : [ "org.w3c.dom.events.Event" ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "addEventListener",
+      "params" : [ "java.lang.String", "org.w3c.dom.events.EventListener", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "removeEventListener",
+      "params" : [ "java.lang.String", "org.w3c.dom.events.EventListener", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "org.w3c.dom.events.EventTarget",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.UIEvent" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "KeyboardEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getKeyIdentifier",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMetaKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCtrlKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getShiftKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getKeyLocation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getModifierState",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getAltKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "initKeyboardEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "java.lang.String", "int", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initKeyboardEventNS",
+      "params" : [ "java.lang.String", "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "java.lang.String", "int", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getDetail",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "initUIEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getView",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.views.AbstractView"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.KeyboardEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "DOM_KEY_LOCATION_STANDARD",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DOM_KEY_LOCATION_LEFT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DOM_KEY_LOCATION_RIGHT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DOM_KEY_LOCATION_NUMPAD",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.UIEvent" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "MouseEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getButton",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getMetaKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCtrlKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getShiftKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getAltKey",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getClientY",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getScreenX",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getRelatedTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "initMouseEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "int", "int", "int", "int", "int", "boolean", "boolean", "boolean", "boolean", "short", "org.w3c.dom.events.EventTarget" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getScreenY",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClientX",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getDetail",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "initUIEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getView",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.views.AbstractView"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.MouseEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.Event" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "MutationEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "initMutationEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.Node", "java.lang.String", "java.lang.String", "java.lang.String", "short" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getRelatedNode",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Node"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrevValue",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getNewValue",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttrName",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttrChange",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.MutationEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "MODIFICATION",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "ADDITION",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "REMOVAL",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.MutationEvent" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "MutationNameEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "initMutationNameEventNS",
+      "params" : [ "java.lang.String", "java.lang.String", "boolean", "boolean", "org.w3c.dom.Node", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrevNodeName",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrevNamespaceURI",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "initMutationNameEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.Node", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initMutationEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.Node", "java.lang.String", "java.lang.String", "java.lang.String", "short" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getRelatedNode",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.Node"
+    }, {
+      "isStatic" : false,
+      "name" : "getPrevValue",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getNewValue",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttrName",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttrChange",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.MutationNameEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "MODIFICATION",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "ADDITION",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "REMOVAL",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.UIEvent" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TextEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getData",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "initTextEventNS",
+      "params" : [ "java.lang.String", "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initTextEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getDetail",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "initUIEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getView",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.views.AbstractView"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.TextEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.w3c.dom.events.Event" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "UIEvent",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getDetail",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "initUIEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean", "org.w3c.dom.views.AbstractView", "int" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getView",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.views.AbstractView"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStamp",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "getCurrentTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    }, {
+      "isStatic" : false,
+      "name" : "getEventPhase",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "short"
+    }, {
+      "isStatic" : false,
+      "name" : "getBubbles",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getCancelable",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "preventDefault",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "stopPropagation",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "initEvent",
+      "params" : [ "java.lang.String", "boolean", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getTarget",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.w3c.dom.events.EventTarget"
+    } ],
+    "name" : "org.w3c.dom.events.UIEvent",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "CAPTURING_PHASE",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "AT_TARGET",
+      "type" : "short"
+    }, {
+      "isStatic" : true,
+      "name" : "BUBBLING_PHASE",
+      "type" : "short"
+    } ],
+    "isInterface" : true
+  } ],
+  "group" : "org.w3c.dom"
+}

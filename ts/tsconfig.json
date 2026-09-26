@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@Java/*": ["C:/Users/luis_/repositorios/typescript/Packages/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["java"]
+}

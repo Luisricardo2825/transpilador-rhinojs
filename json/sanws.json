@@ -1,0 +1,4270 @@
+{
+  "classes" : [ {
+    "implements" : [ "br.com.sankhya.ws.TroubleShootInfo" ],
+    "constructors" : [ {
+      "name" : "BusinessException",
+      "params" : [ "java.lang.Throwable" ]
+    }, {
+      "name" : "BusinessException",
+      "params" : [ "java.lang.String" ]
+    }, {
+      "name" : "BusinessException",
+      "params" : [ "java.lang.Throwable", "java.lang.String", "br.com.sankhya.ws.Level", "java.lang.String", "java.lang.String" ]
+    }, {
+      "name" : "BusinessException",
+      "params" : [ "java.lang.String", "java.lang.String", "br.com.sankhya.ws.Level", "java.lang.String", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Exception",
+    "simpleName" : "BusinessException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCompany",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLevel",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.Level"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.BusinessException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "br.com.sankhya.ws.ServiceResult" ],
+    "constructors" : [ {
+      "name" : "DOMServiceResult",
+      "params" : [ ]
+    } ],
+    "extends" : "org.jdom.Document",
+    "simpleName" : "DOMServiceResult",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "writeXMLTo",
+      "params" : [ "java.io.OutputStream", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setProperty",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getProperty",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "clone",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "indexOf",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getParent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Parent"
+    }, {
+      "isStatic" : false,
+      "name" : "getContent",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Content"
+    }, {
+      "isStatic" : false,
+      "name" : "getContent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getContent",
+      "params" : [ "org.jdom.filter.Filter" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getRootElement",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getDocType",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.DocType"
+    }, {
+      "isStatic" : false,
+      "name" : "cloneContent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ "org.jdom.filter.Filter" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Content"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "setRootElement",
+      "params" : [ "org.jdom.Element" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "int", "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "int", "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "int", "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "int", "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "setDocType",
+      "params" : [ "org.jdom.DocType" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "setBaseURI",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getContentSize",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "hasRootElement",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getDocument",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "getBaseURI",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getDescendants",
+      "params" : [ "org.jdom.filter.Filter" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Iterator"
+    }, {
+      "isStatic" : false,
+      "name" : "getDescendants",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Iterator"
+    }, {
+      "isStatic" : false,
+      "name" : "detachRootElement",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.DOMServiceResult",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "javax.servlet.Filter" ],
+    "constructors" : [ {
+      "name" : "GZIPFilter",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "GZIPFilter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "init",
+      "params" : [ "javax.servlet.FilterConfig" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "destroy",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "doFilter",
+      "params" : [ "javax.servlet.ServletRequest", "javax.servlet.ServletResponse", "javax.servlet.FilterChain" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.GZIPFilter",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "GZIPResponseStream",
+      "params" : [ "javax.servlet.http.HttpServletResponse", "boolean", "int", "br.com.sankhya.ws.GZIPResponseWrapper" ]
+    } ],
+    "extends" : "javax.servlet.ServletOutputStream",
+    "simpleName" : "GZIPResponseStream",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "write",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "write",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "write",
+      "params" : [ "byte[]", "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "flush",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "close",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "closed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "println",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "double" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "float" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "print",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.GZIPResponseStream",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "GZIPResponseWrapper",
+      "params" : [ "javax.servlet.http.HttpServletResponse", "boolean", "int" ]
+    } ],
+    "extends" : "javax.servlet.http.HttpServletResponseWrapper",
+    "simpleName" : "GZIPResponseWrapper",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "clean",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "flushBuffer",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setContentLength",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getOutputStream",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.ServletOutputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "getWriter",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.io.PrintWriter"
+    }, {
+      "isStatic" : false,
+      "name" : "finishResponse",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequestListener",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.GZIPResponseWrapper$RequestListener"
+    }, {
+      "isStatic" : false,
+      "name" : "createOutputStream",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.ServletOutputStream"
+    }, {
+      "isStatic" : true,
+      "name" : "registryRequestListener",
+      "params" : [ "br.com.sankhya.ws.GZIPResponseWrapper$RequestListener" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addHeader",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "sendRedirect",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setHeader",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setStatus",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setStatus",
+      "params" : [ "int", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addCookie",
+      "params" : [ "javax.servlet.http.Cookie" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addIntHeader",
+      "params" : [ "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "encodeURL",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "sendError",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "sendError",
+      "params" : [ "int", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setIntHeader",
+      "params" : [ "java.lang.String", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addDateHeader",
+      "params" : [ "java.lang.String", "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setDateHeader",
+      "params" : [ "java.lang.String", "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "encodeUrl",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "containsHeader",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "encodeRedirectUrl",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encodeRedirectURL",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "reset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getContentType",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setContentType",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "getResponse",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.ServletResponse"
+    }, {
+      "isStatic" : false,
+      "name" : "setResponse",
+      "params" : [ "javax.servlet.ServletResponse" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setBufferSize",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getBufferSize",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "isCommitted",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "resetBuffer",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getCharacterEncoding",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setCharacterEncoding",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.GZIPResponseWrapper",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "SC_CONTINUE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_SWITCHING_PROTOCOLS",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_OK",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_CREATED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_ACCEPTED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_NON_AUTHORITATIVE_INFORMATION",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_NO_CONTENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_RESET_CONTENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_PARTIAL_CONTENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_MULTIPLE_CHOICES",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_MOVED_PERMANENTLY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_MOVED_TEMPORARILY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_FOUND",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_SEE_OTHER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_NOT_MODIFIED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_USE_PROXY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_TEMPORARY_REDIRECT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_BAD_REQUEST",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_UNAUTHORIZED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_PAYMENT_REQUIRED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_FORBIDDEN",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_NOT_FOUND",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_METHOD_NOT_ALLOWED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_NOT_ACCEPTABLE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_PROXY_AUTHENTICATION_REQUIRED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_REQUEST_TIMEOUT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_CONFLICT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_GONE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_LENGTH_REQUIRED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_PRECONDITION_FAILED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_REQUEST_ENTITY_TOO_LARGE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_REQUEST_URI_TOO_LONG",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_UNSUPPORTED_MEDIA_TYPE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_REQUESTED_RANGE_NOT_SATISFIABLE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_EXPECTATION_FAILED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_INTERNAL_SERVER_ERROR",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_NOT_IMPLEMENTED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_BAD_GATEWAY",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_SERVICE_UNAVAILABLE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_GATEWAY_TIMEOUT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SC_HTTP_VERSION_NOT_SUPPORTED",
+      "type" : "int"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "HttpServiceBroker",
+      "params" : [ ]
+    } ],
+    "extends" : "javax.servlet.http.HttpServlet",
+    "simpleName" : "HttpServiceBroker",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "init",
+      "params" : [ "javax.servlet.ServletConfig" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "service",
+      "params" : [ "javax.servlet.ServletRequest", "javax.servlet.ServletResponse" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "log",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "log",
+      "params" : [ "java.lang.String", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "init",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "destroy",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getInitParameter",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getServletName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getServletInfo",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getServletConfig",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.ServletConfig"
+    }, {
+      "isStatic" : false,
+      "name" : "getServletContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.ServletContext"
+    }, {
+      "isStatic" : false,
+      "name" : "getInitParameterNames",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.HttpServiceBroker",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "SWLOG_SERVICEFOLDER",
+      "type" : "java.io.File"
+    }, {
+      "isStatic" : true,
+      "name" : "SWSERVICECALL_DTFORMAT",
+      "type" : "java.text.SimpleDateFormat"
+    }, {
+      "isStatic" : true,
+      "name" : "REPORTAR_ERROS",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "br.com.sankhya.ws.ServiceResult" ],
+    "constructors" : [ {
+      "name" : "JSONServiceResult",
+      "params" : [ "com.google.gson.JsonObject" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "JSONServiceResult",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "writeXMLTo",
+      "params" : [ "java.io.OutputStream", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.JSONServiceResult",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "JsonParam",
+      "params" : [ "com.google.gson.JsonObject" ]
+    }, {
+      "name" : "JsonParam",
+      "params" : [ "com.google.gson.JsonObject", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "JsonParam",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getAsBigDecimal",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.math.BigDecimal"
+    }, {
+      "isStatic" : false,
+      "name" : "getAsString",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequired",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "com.google.gson.JsonElement"
+    }, {
+      "isStatic" : false,
+      "name" : "getJsonObj",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "com.google.gson.JsonObject"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequiredString",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequiredBigDecimal",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.math.BigDecimal"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequiredJsonParam",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.JsonParam"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.JsonParam",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Enum",
+    "simpleName" : "Level",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "values",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.Level[]"
+    }, {
+      "isStatic" : true,
+      "name" : "valueOf",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.Level"
+    }, {
+      "isStatic" : false,
+      "name" : "getCodigo",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "name",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "compareTo",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "compareTo",
+      "params" : [ "java.lang.Enum" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "valueOf",
+      "params" : [ "java.lang.Class", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Enum"
+    }, {
+      "isStatic" : false,
+      "name" : "getDeclaringClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "ordinal",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.Level",
+    "isEnum" : true,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "ERROR",
+      "type" : "br.com.sankhya.ws.Level"
+    }, {
+      "isStatic" : true,
+      "name" : "WARNING",
+      "type" : "br.com.sankhya.ws.Level"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "br.com.sankhya.ws.TroubleShootInfo" ],
+    "constructors" : [ {
+      "name" : "RuntimeBusinessException",
+      "params" : [ "java.lang.String", "java.lang.String", "br.com.sankhya.ws.Level", "java.lang.String", "java.lang.String" ]
+    }, {
+      "name" : "RuntimeBusinessException",
+      "params" : [ "java.lang.Throwable", "java.lang.String", "br.com.sankhya.ws.Level", "java.lang.String", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "RuntimeBusinessException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCompany",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLevel",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.Level"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.RuntimeBusinessException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "java.io.Serializable" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceAuthenticator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "isAuthenticated",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "clearContext",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "checkValidity",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setupContext",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceAuthenticator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ServiceCallSerialization",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceCallSerialization",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "call",
+      "params" : [ "java.lang.String", "br.com.sankhya.ws.ServiceCallSerialization$Caller", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.ServiceCallSerialization$CallResult"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceCallSerialization",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ServiceCanceledException",
+      "params" : [ "java.lang.String" ]
+    }, {
+      "name" : "ServiceCanceledException",
+      "params" : [ "boolean" ]
+    }, {
+      "name" : "ServiceCanceledException",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "ServiceCanceledException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "isNormalResult",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceCanceledException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "java.io.Serializable" ],
+    "constructors" : [ {
+      "name" : "ServiceContext",
+      "params" : [ "javax.servlet.http.HttpServletRequest" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceContext",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "reset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttribute",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getHeaders",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "addHeader",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setStatus",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "isJsonRequest",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttribute",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "setRequestBody",
+      "params" : [ "org.jdom.Element" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getHttpSessionId",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getClientEvents",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "makeCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "cancelSilently",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setJsonResponse",
+      "params" : [ "com.google.gson.JsonObject" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getCurrent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.ServiceContext"
+    }, {
+      "isStatic" : false,
+      "name" : "hasClientEvent",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setResponseData",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addClientEvent",
+      "params" : [ "java.lang.String", "org.jdom.Element" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setStatusMessage",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getHttpRequest",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.http.HttpServletRequest"
+    }, {
+      "isStatic" : false,
+      "name" : "unregistry",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setTempFolder",
+      "params" : [ "java.io.File" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTempFolder",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.io.File"
+    }, {
+      "isStatic" : false,
+      "name" : "getBodyElement",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getJsonResponse",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "com.google.gson.JsonObject"
+    }, {
+      "isStatic" : false,
+      "name" : "getStatus",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setAutentication",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getResponseData",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "isRetryOnError",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getTransactionId",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getResourceId",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setRetryOnError",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getAutentication",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequestBody",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getStatusMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getServiceName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getServletContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "javax.servlet.ServletContext"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequestSessionAttribute",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getParameterAsBoolean",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getParameterAsString",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getParameterAsTimestamp",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.sql.Timestamp"
+    }, {
+      "isStatic" : false,
+      "name" : "getRequestInputStream",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "wasSilentlyCanceled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "clientEventIsRegistered",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeRequestSessionAttribute",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getHttpSessionAttributes",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "getParameterAsBigDecimal",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.math.BigDecimal"
+    }, {
+      "isStatic" : false,
+      "name" : "getTransactionsWithLocalPrinting",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Set"
+    }, {
+      "isStatic" : false,
+      "name" : "removeAllClientEvent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "hasTransactionWithLocalPrint",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hasPendingPrinting",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSleepBetweenRetries",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getConversationHandler",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.conversation.ConversationHandler"
+    }, {
+      "isStatic" : false,
+      "name" : "setStreamedResult",
+      "params" : [ "java.io.ByteArrayOutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStreamedResult",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.io.ByteArrayOutputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "getJsonRequestBody",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "com.google.gson.JsonObject"
+    }, {
+      "isStatic" : false,
+      "name" : "setSleepBetweenRetries",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addTransactionWithLocalPrint",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "isPendingPrinting",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setServiceDataTransformerManager",
+      "params" : [ "br.com.sankhya.ws.transformer.ServiceDataTransformerManager" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "putHttpSessionAttribute",
+      "params" : [ "java.lang.String", "java.io.Serializable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setConversationHandler",
+      "params" : [ "br.com.sankhya.ws.conversation.ConversationHandler" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "removeClientEvent",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "isParameterBlankOrNull",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceContext",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "STATUS_ERROR",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STATUS_OK",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STATUS_INFO",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STATUS_TIMEOUT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STATUS_SERVICE_CANCELED",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STATUS_ERROR_BUSINESS",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STATUS_ERROR_TROUBLEEXCEPTION",
+      "type" : "int"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceInvocationListener",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "clean",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "afterExecute",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "beforeExecute",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceInvocationListener",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "br.com.sankhya.ws.ServiceInvocationListener" ],
+    "constructors" : [ {
+      "name" : "ServiceInvocationListenerAdapter",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceInvocationListenerAdapter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "clean",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "afterExecute",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "beforeExecute",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceInvocationListenerAdapter",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceResult",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "writeXMLTo",
+      "params" : [ "java.io.OutputStream", "java.lang.String", "boolean" ],
+      "isAbstract" : true,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.ServiceResult",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "br.com.sankhya.ws.ServiceResult" ],
+    "constructors" : [ {
+      "name" : "StreamedServiceResult",
+      "params" : [ "java.io.ByteArrayOutputStream" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "StreamedServiceResult",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "writeXMLTo",
+      "params" : [ "java.io.OutputStream", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.StreamedServiceResult",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TroubleShootInfo",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCode",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCompany",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLevel",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "br.com.sankhya.ws.Level"
+    } ],
+    "name" : "br.com.sankhya.ws.TroubleShootInfo",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "XMLOutter",
+      "params" : [ ]
+    } ],
+    "extends" : "org.jdom.output.XMLOutputter",
+    "simpleName" : "XMLOutter",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "clone",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "setFormat",
+      "params" : [ "org.jdom.output.Format" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getFormat",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.output.Format"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "java.util.List", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.DocType", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Element", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.EntityRef", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.ProcessingInstruction", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Comment", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Text", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.CDATA", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.CDATA", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "java.util.List", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Element", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.DocType", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Document", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Document", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.EntityRef", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.ProcessingInstruction", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Text", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "output",
+      "params" : [ "org.jdom.Comment", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.ProcessingInstruction" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.Text" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.EntityRef" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.Comment" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.Document" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.DocType" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.Element" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "org.jdom.CDATA" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputString",
+      "params" : [ "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "outputElementContent",
+      "params" : [ "org.jdom.Element", "java.io.OutputStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "outputElementContent",
+      "params" : [ "org.jdom.Element", "java.io.Writer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "escapeAttributeEntities",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "escapeElementEntities",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.XMLOutter",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ConversationHandler",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ConversationHandler",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "terminate",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "sendClientSignal",
+      "params" : [ "br.com.sankhya.ws.conversation.ConversationSignal" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStateData",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.conversation.ConversationHandler$StateData"
+    }, {
+      "isStatic" : false,
+      "name" : "checkTerminated",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "aceptSignalFromClient",
+      "params" : [ "java.lang.String", "long" ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.conversation.ConversationSignal"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.conversation.ConversationHandler",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ConversationManager",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ConversationManager",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "processConversationServices",
+      "params" : [ "javax.servlet.http.HttpServletRequest" ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.ServiceResult"
+    }, {
+      "isStatic" : false,
+      "name" : "registryConversationHandler",
+      "params" : [ "br.com.sankhya.ws.ServiceContext", "javax.servlet.http.HttpServletRequest" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "clearConversationState",
+      "params" : [ "br.com.sankhya.ws.ServiceContext" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.conversation.ConversationManager",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ConversationSignal",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ConversationSignal",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getData",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "getAllData",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Map"
+    }, {
+      "isStatic" : false,
+      "name" : "putData",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.conversation.ConversationSignal",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TerminatedException",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "TerminatedException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.conversation.TerminatedException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceDataTransformer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "transformResponse",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "transformRequest",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "br.com.sankhya.ws.transformer.ServiceDataTransformer",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ServiceDataTransformerManager",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceDataTransformerManager",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getTransformer",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "br.com.sankhya.ws.transformer.ServiceDataTransformer"
+    }, {
+      "isStatic" : false,
+      "name" : "registerTransformer",
+      "params" : [ "br.com.sankhya.ws.transformer.ServiceDataTransformer" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.transformer.ServiceDataTransformerManager",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ElementProxy",
+      "params" : [ "java.lang.String", "com.google.gson.JsonObject" ]
+    } ],
+    "extends" : "org.jdom.Element",
+    "simpleName" : "ElementProxy",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getValue",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getText",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChild",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttribute",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Attribute"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildren",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildren",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributeValue",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "clone",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "indexOf",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "isAncestor",
+      "params" : [ "org.jdom.Element" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getContent",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Content"
+    }, {
+      "isStatic" : false,
+      "name" : "getContent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getContent",
+      "params" : [ "org.jdom.filter.Filter" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributes",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttribute",
+      "params" : [ "org.jdom.Attribute" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttribute",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttribute",
+      "params" : [ "java.lang.String", "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "cloneContent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ "org.jdom.filter.Filter" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "removeContent",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Content"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "int", "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "int", "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "addContent",
+      "params" : [ "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "int", "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Parent"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setContent",
+      "params" : [ "int", "org.jdom.Content" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getContentSize",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getDescendants",
+      "params" : [ "org.jdom.filter.Filter" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Iterator"
+    }, {
+      "isStatic" : false,
+      "name" : "getDescendants",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Iterator"
+    }, {
+      "isStatic" : false,
+      "name" : "getQualifiedName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getNamespace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Namespace"
+    }, {
+      "isStatic" : false,
+      "name" : "getNamespace",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Namespace"
+    }, {
+      "isStatic" : false,
+      "name" : "setText",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setNamespace",
+      "params" : [ "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "java.util.List" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "setAttributes",
+      "params" : [ "java.util.Collection" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "removeChild",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeChild",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeAttribute",
+      "params" : [ "org.jdom.Attribute" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeAttribute",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeAttribute",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "isRootElement",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getTextNormalize",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChild",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "getNamespaceURI",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildText",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildText",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildTextTrim",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildTextTrim",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttribute",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Attribute"
+    }, {
+      "isStatic" : false,
+      "name" : "getTextTrim",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildren",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "removeChildren",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "removeChildren",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildTextNormalize",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getChildTextNormalize",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAdditionalNamespaces",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.List"
+    }, {
+      "isStatic" : false,
+      "name" : "addNamespaceDeclaration",
+      "params" : [ "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getNamespacePrefix",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "removeNamespaceDeclaration",
+      "params" : [ "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributeValue",
+      "params" : [ "java.lang.String", "org.jdom.Namespace", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributeValue",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getAttributeValue",
+      "params" : [ "java.lang.String", "org.jdom.Namespace" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getParent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Parent"
+    }, {
+      "isStatic" : false,
+      "name" : "detach",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Content"
+    }, {
+      "isStatic" : false,
+      "name" : "getDocument",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Document"
+    }, {
+      "isStatic" : false,
+      "name" : "getParentElement",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.transformer.json.ElementProxy",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "br.com.sankhya.ws.transformer.ServiceDataTransformer" ],
+    "constructors" : [ {
+      "name" : "Json2XMLDataTransformer",
+      "params" : [ "javax.servlet.ServletContext" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Json2XMLDataTransformer",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "transformResponse",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "transformRequest",
+      "params" : [ "java.lang.String", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.transformer.json.Json2XMLDataTransformer",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "TYPE",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "Json2XMLParser",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Json2XMLParser",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "main",
+      "params" : [ "java.lang.String[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "jsonToElement",
+      "params" : [ "java.lang.String", "com.google.gson.JsonObject" ],
+      "isAbstract" : false,
+      "returnType" : "org.jdom.Element"
+    }, {
+      "isStatic" : true,
+      "name" : "elementToJson",
+      "params" : [ "org.jdom.Element", "br.com.sankhya.ws.transformer.json.Json2XMLParser$Types" ],
+      "isAbstract" : false,
+      "returnType" : "com.google.gson.JsonObject"
+    }, {
+      "isStatic" : true,
+      "name" : "elementToJson",
+      "params" : [ "org.jdom.Element" ],
+      "isAbstract" : false,
+      "returnType" : "com.google.gson.JsonObject"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "br.com.sankhya.ws.transformer.json.Json2XMLParser",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "XML_CONTENT_KEY",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : false
+  } ],
+  "group" : "br.com.sankhya.ws"
+}

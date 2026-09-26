@@ -1,0 +1,2072 @@
+{
+  "classes" : [ {
+    "implements" : [ "org.apache.commons.codec.Decoder" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "BinaryDecoder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : true,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.commons.codec.BinaryDecoder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.commons.codec.Encoder" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "BinaryEncoder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : true,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.commons.codec.BinaryEncoder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Decoder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.commons.codec.Decoder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DecoderException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Exception",
+    "simpleName" : "DecoderException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.DecoderException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Encoder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.commons.codec.Encoder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EncoderException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Exception",
+    "simpleName" : "EncoderException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.EncoderException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.Decoder" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "StringDecoder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.commons.codec.StringDecoder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.commons.codec.Encoder" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "StringEncoder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.Object"
+    } ],
+    "name" : "org.apache.commons.codec.StringEncoder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "java.util.Comparator" ],
+    "constructors" : [ {
+      "name" : "StringEncoderComparator",
+      "params" : [ ]
+    }, {
+      "name" : "StringEncoderComparator",
+      "params" : [ "org.apache.commons.codec.StringEncoder" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "StringEncoderComparator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "compare",
+      "params" : [ "java.lang.Object", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "reversed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    }, {
+      "isStatic" : false,
+      "name" : "thenComparing",
+      "params" : [ "java.util.function.Function" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    }, {
+      "isStatic" : false,
+      "name" : "thenComparing",
+      "params" : [ "java.util.function.Function", "java.util.Comparator" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    }, {
+      "isStatic" : false,
+      "name" : "thenComparing",
+      "params" : [ "java.util.Comparator" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    }, {
+      "isStatic" : false,
+      "name" : "thenComparingInt",
+      "params" : [ "java.util.function.ToIntFunction" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    }, {
+      "isStatic" : false,
+      "name" : "thenComparingLong",
+      "params" : [ "java.util.function.ToLongFunction" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    }, {
+      "isStatic" : false,
+      "name" : "thenComparingDouble",
+      "params" : [ "java.util.function.ToDoubleFunction" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Comparator"
+    } ],
+    "name" : "org.apache.commons.codec.StringEncoderComparator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.BinaryEncoder", "org.apache.commons.codec.BinaryDecoder" ],
+    "constructors" : [ {
+      "name" : "Base64",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Base64",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "encodeBase64",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "encodeBase64",
+      "params" : [ "byte[]", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "decodeBase64",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "encodeBase64Chunked",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "isArrayByteBase64",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.binary.Base64",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.BinaryDecoder", "org.apache.commons.codec.BinaryEncoder" ],
+    "constructors" : [ {
+      "name" : "BinaryCodec",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "BinaryCodec",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "toByteArray",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "toAsciiChars",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "char[]"
+    }, {
+      "isStatic" : true,
+      "name" : "toAsciiString",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "fromAscii",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "fromAscii",
+      "params" : [ "char[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "toAsciiBytes",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.binary.BinaryCodec",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.BinaryEncoder", "org.apache.commons.codec.BinaryDecoder" ],
+    "constructors" : [ {
+      "name" : "Hex",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Hex",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "decodeHex",
+      "params" : [ "char[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "encodeHex",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "char[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.binary.Hex",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DigestUtils",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DigestUtils",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "shaHex",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "shaHex",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "md5Hex",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "md5Hex",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "sha",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "sha",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "md5",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "md5",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.digest.DigestUtils",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.StringEncoder" ],
+    "constructors" : [ {
+      "name" : "DoubleMetaphone",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DoubleMetaphone",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "doubleMetaphone",
+      "params" : [ "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "doubleMetaphone",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "setMaxCodeLen",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getMaxCodeLen",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "isDoubleMetaphoneEqual",
+      "params" : [ "java.lang.String", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "isDoubleMetaphoneEqual",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.language.DoubleMetaphone",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.StringEncoder" ],
+    "constructors" : [ {
+      "name" : "Metaphone",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Metaphone",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setMaxCodeLen",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getMaxCodeLen",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "isMetaphoneEqual",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "metaphone",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.language.Metaphone",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.StringEncoder" ],
+    "constructors" : [ {
+      "name" : "RefinedSoundex",
+      "params" : [ "char[]" ]
+    }, {
+      "name" : "RefinedSoundex",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "RefinedSoundex",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "soundex",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "difference",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.language.RefinedSoundex",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "US_ENGLISH",
+      "type" : "org.apache.commons.codec.language.RefinedSoundex"
+    }, {
+      "isStatic" : true,
+      "name" : "US_ENGLISH_MAPPING",
+      "type" : "char[]"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.StringEncoder" ],
+    "constructors" : [ {
+      "name" : "Soundex",
+      "params" : [ "char[]" ]
+    }, {
+      "name" : "Soundex",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Soundex",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getMaxLength",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setMaxLength",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "soundex",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "difference",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.language.Soundex",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "US_ENGLISH",
+      "type" : "org.apache.commons.codec.language.Soundex"
+    }, {
+      "isStatic" : true,
+      "name" : "US_ENGLISH_MAPPING_STRING",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "US_ENGLISH_MAPPING",
+      "type" : "char[]"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "SoundexUtils",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.language.SoundexUtils",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.StringEncoder", "org.apache.commons.codec.StringDecoder" ],
+    "constructors" : [ {
+      "name" : "BCodec",
+      "params" : [ ]
+    }, {
+      "name" : "BCodec",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "org.apache.commons.codec.net.RFC1522Codec",
+    "simpleName" : "BCodec",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getDefaultCharset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.net.BCodec",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.StringEncoder", "org.apache.commons.codec.StringDecoder" ],
+    "constructors" : [ {
+      "name" : "QCodec",
+      "params" : [ ]
+    }, {
+      "name" : "QCodec",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "org.apache.commons.codec.net.RFC1522Codec",
+    "simpleName" : "QCodec",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "isEncodeBlanks",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "setEncodeBlanks",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultCharset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.net.QCodec",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.codec.BinaryEncoder", "org.apache.commons.codec.BinaryDecoder", "org.apache.commons.codec.StringEncoder", "org.apache.commons.codec.StringDecoder" ],
+    "constructors" : [ {
+      "name" : "QuotedPrintableCodec",
+      "params" : [ ]
+    }, {
+      "name" : "QuotedPrintableCodec",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "QuotedPrintableCodec",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "decodeQuotedPrintable",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "encodeQuotedPrintable",
+      "params" : [ "java.util.BitSet", "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultCharset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.net.QuotedPrintableCodec",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "RFC1522Codec",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.net.RFC1522Codec",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "StringEncodings",
+    "methods" : [ ],
+    "name" : "org.apache.commons.codec.net.StringEncodings",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "US_ASCII",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "UTF8",
+      "type" : "java.lang.String"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.commons.codec.BinaryEncoder", "org.apache.commons.codec.BinaryDecoder", "org.apache.commons.codec.StringEncoder", "org.apache.commons.codec.StringDecoder" ],
+    "constructors" : [ {
+      "name" : "URLCodec",
+      "params" : [ ]
+    }, {
+      "name" : "URLCodec",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "URLCodec",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "decodeUrl",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : true,
+      "name" : "encodeUrl",
+      "params" : [ "java.util.BitSet", "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultCharset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "decode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "encode",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getEncoding",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.codec.net.URLCodec",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.apache.commons.codec"
+}

@@ -1,0 +1,1067 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "LexicalUnits",
+    "methods" : [ ],
+    "name" : "org.apache.batik.xml.LexicalUnits",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "EOF",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "S",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "XML_DECL_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DOCTYPE_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "COMMENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PI_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PI_DATA",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PI_END",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CHARACTER_DATA",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "START_TAG",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "END_TAG",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CDATA_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CHARACTER_REFERENCE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENTITY_REFERENCE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "EQ",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "FIRST_ATTRIBUTE_FRAGMENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ATTRIBUTE_FRAGMENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LAST_ATTRIBUTE_FRAGMENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "EMPTY_ELEMENT_END",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "END_CHAR",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SECTION_END",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "VERSION_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENCODING_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STANDALONE_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STRING",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "SYSTEM_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PUBLIC_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LSQUARE_BRACKET",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "RSQUARE_BRACKET",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ELEMENT_DECLARATION_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ATTLIST_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENTITY_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NOTATION_START",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PARAMETER_ENTITY_REFERENCE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "EMPTY_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ANY_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "QUESTION",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PLUS",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "STAR",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LEFT_BRACE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "RIGHT_BRACE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PIPE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "COMMA",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PCDATA_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CDATA_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ID_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "IDREF_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "IDREFS_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NMTOKEN_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NMTOKENS_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENTITY_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENTITIES_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "REQUIRED_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "IMPLIED_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "FIXED_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NMTOKEN",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NOTATION_IDENTIFIER",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PERCENT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NDATA_IDENTIFIER",
+      "type" : "int"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "XMLCharacters",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.xml.XMLCharacters",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "NAME_FIRST_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME11_FIRST_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME11_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "XML_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "PUBLIC_ID_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "VERSION_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "ALPHABETIC_CHARACTER",
+      "type" : "int[]"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "XMLException",
+      "params" : [ "java.lang.String", "java.lang.Exception" ]
+    }, {
+      "name" : "XMLException",
+      "params" : [ "java.lang.Exception" ]
+    }, {
+      "name" : "XMLException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "XMLException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getException",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Exception"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.xml.XMLException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.batik.i18n.Localizable" ],
+    "constructors" : [ {
+      "name" : "XMLScanner",
+      "params" : [ "java.io.InputStream", "java.lang.String" ]
+    }, {
+      "name" : "XMLScanner",
+      "params" : [ "java.lang.String" ]
+    }, {
+      "name" : "XMLScanner",
+      "params" : [ "java.io.Reader" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "XMLScanner",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "clearBuffer",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStart",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocale",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Locale"
+    }, {
+      "isStatic" : false,
+      "name" : "setLocale",
+      "params" : [ "java.util.Locale" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getBuffer",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "char[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getColumn",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getLine",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "formatMessage",
+      "params" : [ "java.lang.String", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getEnd",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setContext",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStringDelimiter",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "char"
+    }, {
+      "isStatic" : false,
+      "name" : "getEndOffset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getDepth",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "setDepth",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStartOffset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "next",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "next",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getContext",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getType",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.xml.XMLScanner",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "DOCUMENT_START_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "TOP_LEVEL_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "PI_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "XML_DECL_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DOCTYPE_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "START_TAG_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CONTENT_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "DTD_DECLARATIONS_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "CDATA_SECTION_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "END_TAG_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ATTRIBUTE_VALUE_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ATTLIST_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ELEMENT_DECLARATION_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENTITY_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NOTATION_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "NOTATION_TYPE_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENUMERATION_CONTEXT",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "ENTITY_VALUE_CONTEXT",
+      "type" : "int"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "XMLStreamNormalizingReader",
+      "params" : [ "java.io.InputStream", "java.lang.String" ]
+    } ],
+    "extends" : "org.apache.batik.util.io.StreamNormalizingReader",
+    "simpleName" : "XMLStreamNormalizingReader",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getColumn",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getLine",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "read",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "close",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "read",
+      "params" : [ "char[]", "int", "int" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "read",
+      "params" : [ "char[]" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "read",
+      "params" : [ "java.nio.CharBuffer" ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "mark",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "skip",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "long"
+    }, {
+      "isStatic" : false,
+      "name" : "markSupported",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "reset",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "ready",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.xml.XMLStreamNormalizingReader",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "org.apache.batik.xml.XMLCharacters",
+    "simpleName" : "XMLUtilities",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "isXML11Character",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLCharacter",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLSpace",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXML11NameCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLPublicIdCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "encodingToJavaEncoding",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "isXML11NameFirstCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "createXMLDocumentReader",
+      "params" : [ "java.io.InputStream" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.Reader"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLVersionCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLAlphabeticCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLNameCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : true,
+      "name" : "isXMLNameFirstCharacter",
+      "params" : [ "char" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.batik.xml.XMLUtilities",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "NAME_FIRST_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME11_FIRST_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "NAME11_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "XML_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "PUBLIC_ID_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "VERSION_CHARACTER",
+      "type" : "int[]"
+    }, {
+      "isStatic" : true,
+      "name" : "ALPHABETIC_CHARACTER",
+      "type" : "int[]"
+    } ],
+    "isInterface" : false
+  } ],
+  "group" : "org.apache.batik.xml"
+}

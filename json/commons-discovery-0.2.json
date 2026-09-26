@@ -1,0 +1,3668 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DiscoveryException",
+      "params" : [ ]
+    }, {
+      "name" : "DiscoveryException",
+      "params" : [ "java.lang.String", "java.lang.Throwable" ]
+    }, {
+      "name" : "DiscoveryException",
+      "params" : [ "java.lang.String" ]
+    }, {
+      "name" : "DiscoveryException",
+      "params" : [ "java.lang.Throwable" ]
+    } ],
+    "extends" : "java.lang.RuntimeException",
+    "simpleName" : "DiscoveryException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.DiscoveryException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "Resource",
+      "params" : [ "java.lang.String", "java.net.URL", "java.lang.ClassLoader" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Resource",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "toArray",
+      "params" : [ "org.apache.commons.discovery.ResourceIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.Resource[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResourceAsStream",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "getResource",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.Resource",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ResourceClass",
+      "params" : [ "java.lang.Class", "java.net.URL" ]
+    }, {
+      "name" : "ResourceClass",
+      "params" : [ "java.lang.String", "java.net.URL", "java.lang.ClassLoader" ]
+    } ],
+    "extends" : "org.apache.commons.discovery.Resource",
+    "simpleName" : "ResourceClass",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "loadClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "toArray",
+      "params" : [ "org.apache.commons.discovery.ResourceIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.Resource[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResourceAsStream",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "getResource",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceClass",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceDiscover" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceClassDiscover",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "findResourceClasses",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceClassIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceClasses",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceClassIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceClassDiscover",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ResourceClassIterator",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.ResourceIterator",
+    "simpleName" : "ResourceClassIterator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "nextResource",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.Resource"
+    }, {
+      "isStatic" : false,
+      "name" : "nextResourceName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "nextResourceClass",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceClass"
+    }, {
+      "isStatic" : false,
+      "name" : "hasNext",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceClassIterator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceDiscover",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceDiscover",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+    "constructors" : [ {
+      "name" : "ResourceIterator",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceIterator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "nextResource",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.Resource"
+    }, {
+      "isStatic" : false,
+      "name" : "nextResourceName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hasNext",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceIterator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceNameDiscover",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceNameDiscover",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceNameIterator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "nextResourceName",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hasNext",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "boolean"
+    } ],
+    "name" : "org.apache.commons.discovery.ResourceNameIterator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ServiceDiscoveryTask",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ServiceDiscoveryTask",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setDebug",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getServiceInfo",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setServiceName",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "execute",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.ant.ServiceDiscoveryTask",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "org.apache.commons.discovery.jdk.JDKHooks",
+    "simpleName" : "JDK11Hooks",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getThreadContextClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getSystemClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResources",
+      "params" : [ "java.lang.ClassLoader", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : true,
+      "name" : "getJDKHooks",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.jdk.JDKHooks"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.jdk.JDK11Hooks",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "org.apache.commons.discovery.jdk.JDKHooks",
+    "simpleName" : "JDK12Hooks",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getThreadContextClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getSystemClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResources",
+      "params" : [ "java.lang.ClassLoader", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : true,
+      "name" : "getJDKHooks",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.jdk.JDKHooks"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.jdk.JDK12Hooks",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "JDKHooks",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "getJDKHooks",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.jdk.JDKHooks"
+    }, {
+      "isStatic" : false,
+      "name" : "getThreadContextClassLoader",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getSystemClassLoader",
+      "params" : [ ],
+      "isAbstract" : true,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "getResources",
+      "params" : [ "java.lang.ClassLoader", "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.jdk.JDKHooks",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.ClassLoader",
+    "simpleName" : "PsuedoSystemClassLoader",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getResourceAsStream",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : false,
+      "name" : "getResource",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : false,
+      "name" : "loadClass",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemClassLoader",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemResourceAsStream",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.io.InputStream"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemResource",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.net.URL"
+    }, {
+      "isStatic" : false,
+      "name" : "getResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : true,
+      "name" : "getSystemResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "getParent",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "setDefaultAssertionStatus",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setPackageAssertionStatus",
+      "params" : [ "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setClassAssertionStatus",
+      "params" : [ "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "clearAssertionStatus",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.jdk.PsuedoSystemClassLoader",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DiscoveryLogFactory",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DiscoveryLogFactory",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "newLog",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.logging.Log"
+    }, {
+      "isStatic" : true,
+      "name" : "_newLog",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.logging.Log"
+    }, {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "setFactory",
+      "params" : [ "org.apache.commons.logging.LogFactory" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.log.DiscoveryLogFactory",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.logging.Log" ],
+    "constructors" : [ {
+      "name" : "SimpleLog",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "SimpleLog",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "trace",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "trace",
+      "params" : [ "java.lang.Object", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "isWarnEnabled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "isInfoEnabled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "isDebugEnabled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "isTraceEnabled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "warn",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "warn",
+      "params" : [ "java.lang.Object", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "isErrorEnabled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "info",
+      "params" : [ "java.lang.Object", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "info",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "setLevel",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getLevel",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "isFatalEnabled",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "fatal",
+      "params" : [ "java.lang.Object", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fatal",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "debug",
+      "params" : [ "java.lang.Object", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "debug",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "error",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "error",
+      "params" : [ "java.lang.Object", "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.log.SimpleLog",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_TRACE",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_DEBUG",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_INFO",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_WARN",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_ERROR",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_FATAL",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_ALL",
+      "type" : "int"
+    }, {
+      "isStatic" : true,
+      "name" : "LOG_LEVEL_OFF",
+      "type" : "int"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ClassLoaders",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ClassLoaders",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "getLibLoaders",
+      "params" : [ "java.lang.Class", "java.lang.Class", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.resource.ClassLoaders"
+    }, {
+      "isStatic" : true,
+      "name" : "getAppLoaders",
+      "params" : [ "java.lang.Class", "java.lang.Class", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.resource.ClassLoaders"
+    }, {
+      "isStatic" : false,
+      "name" : "get",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.ClassLoader"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "java.lang.ClassLoader", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "put",
+      "params" : [ "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "size",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "isAncestor",
+      "params" : [ "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.ClassLoaders",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverResources",
+      "params" : [ ]
+    }, {
+      "name" : "DiscoverResources",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.ResourceDiscoverImpl",
+    "simpleName" : "DiscoverResources",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "addClassLoader",
+      "params" : [ "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setClassLoaders",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.DiscoverResources",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceDiscover" ],
+    "constructors" : [ {
+      "name" : "ResourceDiscoverImpl",
+      "params" : [ ]
+    }, {
+      "name" : "ResourceDiscoverImpl",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "ResourceDiscoverImpl",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "addClassLoader",
+      "params" : [ "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setClassLoaders",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResources",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.ResourceDiscoverImpl",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverMappedNames",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "DiscoverMappedNames",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "map",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "map",
+      "params" : [ "java.lang.String", "java.lang.String[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverMappedNames",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverNamesInAlternateManagedProperties",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "DiscoverNamesInAlternateManagedProperties",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addClassToPropertyNameMapping",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverNamesInAlternateManagedProperties",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverNamesInDictionary",
+      "params" : [ "java.util.Dictionary" ]
+    }, {
+      "name" : "DiscoverNamesInDictionary",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "DiscoverNamesInDictionary",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "setDictionary",
+      "params" : [ "java.util.Dictionary" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addResource",
+      "params" : [ "java.lang.String", "java.lang.String[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addResource",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverNamesInDictionary",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverNamesInFile",
+      "params" : [ ]
+    }, {
+      "name" : "DiscoverNamesInFile",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ]
+    }, {
+      "name" : "DiscoverNamesInFile",
+      "params" : [ "org.apache.commons.discovery.ResourceDiscover" ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "DiscoverNamesInFile",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getDiscover",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceDiscover"
+    }, {
+      "isStatic" : false,
+      "name" : "setDiscoverer",
+      "params" : [ "org.apache.commons.discovery.ResourceDiscover" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverNamesInFile",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverNamesInManagedProperties",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "DiscoverNamesInManagedProperties",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverNamesInManagedProperties",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverNamesInSystemProperties",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "DiscoverNamesInSystemProperties",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverNamesInSystemProperties",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "DiscoverServiceNames",
+      "params" : [ ]
+    }, {
+      "name" : "DiscoverServiceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceDiscover" ]
+    }, {
+      "name" : "DiscoverServiceNames",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.DiscoverNamesInFile",
+    "simpleName" : "DiscoverServiceNames",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getDiscover",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceDiscover"
+    }, {
+      "isStatic" : false,
+      "name" : "setDiscoverer",
+      "params" : [ "org.apache.commons.discovery.ResourceDiscover" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.DiscoverServiceNames",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "NameDiscoverers",
+      "params" : [ ]
+    } ],
+    "extends" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "simpleName" : "NameDiscoverers",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addResourceNameDiscover",
+      "params" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.NameDiscoverers",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "org.apache.commons.discovery.ResourceNameDiscover" ],
+    "constructors" : [ {
+      "name" : "ResourceNameDiscoverImpl",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceNameDiscoverImpl",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : true,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "findResourceNames",
+      "params" : [ "org.apache.commons.discovery.ResourceNameIterator" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.ResourceNameIterator"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ClassUtils",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ClassUtils",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "verifyAncestory",
+      "params" : [ "java.lang.Class", "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "setLog",
+      "params" : [ "org.apache.commons.logging.Log" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "findPublicStaticMethod",
+      "params" : [ "java.lang.Class", "java.lang.Class", "java.lang.String", "java.lang.Class[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.reflect.Method"
+    }, {
+      "isStatic" : true,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class", "java.lang.Class[]", "java.lang.Object[]" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "getPackageName",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.ClassUtils",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DefaultClassHolder",
+      "params" : [ "java.lang.String" ]
+    }, {
+      "name" : "DefaultClassHolder",
+      "params" : [ "java.lang.Class" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DefaultClassHolder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getDefaultClass",
+      "params" : [ "org.apache.commons.discovery.tools.SPInterface", "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "getDefaultName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.DefaultClassHolder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DiscoverClass",
+      "params" : [ ]
+    }, {
+      "name" : "DiscoverClass",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DiscoverClass",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getClassLoaders",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.resource.ClassLoaders"
+    }, {
+      "isStatic" : true,
+      "name" : "discoverClassNames",
+      "params" : [ "org.apache.commons.discovery.tools.SPInterface", "java.util.Properties" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String[]"
+    }, {
+      "isStatic" : true,
+      "name" : "getManagedProperty",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class", "java.util.Properties", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "newInstance",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders", "org.apache.commons.discovery.tools.SPInterface", "org.apache.commons.discovery.tools.PropertiesHolder", "org.apache.commons.discovery.tools.DefaultClassHolder" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class", "java.util.Properties" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.util.Properties" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "find",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders", "org.apache.commons.discovery.tools.SPInterface", "org.apache.commons.discovery.tools.PropertiesHolder", "org.apache.commons.discovery.tools.DefaultClassHolder" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.util.Properties", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.DiscoverClass",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "nullDefaultImpl",
+      "type" : "org.apache.commons.discovery.tools.DefaultClassHolder"
+    }, {
+      "isStatic" : true,
+      "name" : "nullProperties",
+      "type" : "org.apache.commons.discovery.tools.PropertiesHolder"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "DiscoverSingleton",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "DiscoverSingleton",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "org.apache.commons.discovery.resource.ClassLoaders", "org.apache.commons.discovery.tools.SPInterface", "org.apache.commons.discovery.tools.PropertiesHolder", "org.apache.commons.discovery.tools.DefaultClassHolder" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.util.Properties", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "find",
+      "params" : [ "java.lang.Class", "java.util.Properties" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "release",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "release",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.DiscoverSingleton",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "EnvironmentCache",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "EnvironmentCache",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "get",
+      "params" : [ "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : true,
+      "name" : "put",
+      "params" : [ "java.lang.ClassLoader", "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "release",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "release",
+      "params" : [ "java.lang.ClassLoader" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.EnvironmentCache",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "smallHashSize",
+      "type" : "int"
+    } ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ManagedProperties",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ManagedProperties",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "setProperty",
+      "params" : [ "java.lang.String", "java.lang.String", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "setProperty",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "java.lang.ClassLoader", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperty",
+      "params" : [ "java.lang.ClassLoader", "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "getProperties",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Properties"
+    }, {
+      "isStatic" : true,
+      "name" : "setProperties",
+      "params" : [ "java.util.Map" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "setProperties",
+      "params" : [ "java.util.Map", "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : true,
+      "name" : "propertyNames",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.ManagedProperties",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "PropertiesHolder",
+      "params" : [ "java.util.Properties" ]
+    }, {
+      "name" : "PropertiesHolder",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "PropertiesHolder",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getPropertiesFileName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getProperties",
+      "params" : [ "org.apache.commons.discovery.tools.SPInterface", "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Properties"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.PropertiesHolder",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "ResourceUtils",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "ResourceUtils",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "loadProperties",
+      "params" : [ "java.lang.Class", "java.lang.String", "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Properties"
+    }, {
+      "isStatic" : true,
+      "name" : "getResource",
+      "params" : [ "java.lang.Class", "java.lang.String", "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "org.apache.commons.discovery.Resource"
+    }, {
+      "isStatic" : true,
+      "name" : "getPackageName",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.ResourceUtils",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "SPInterface",
+      "params" : [ "java.lang.Class", "java.lang.String" ]
+    }, {
+      "name" : "SPInterface",
+      "params" : [ "java.lang.Class" ]
+    }, {
+      "name" : "SPInterface",
+      "params" : [ "java.lang.Class", "java.lang.Class[]", "java.lang.Object[]" ]
+    }, {
+      "name" : "SPInterface",
+      "params" : [ "java.lang.Class", "java.lang.String", "java.lang.Class[]", "java.lang.Object[]" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "SPInterface",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getPropertyName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getSPName",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "verifyAncestory",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSPClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "newInstance",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Object"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.SPInterface",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "Service",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "providers",
+      "params" : [ "java.lang.Class" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : true,
+      "name" : "providers",
+      "params" : [ "org.apache.commons.discovery.tools.SPInterface", "org.apache.commons.discovery.resource.ClassLoaders" ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Enumeration"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.apache.commons.discovery.tools.Service",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.apache.commons.discovery"
+}

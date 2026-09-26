@@ -1,0 +1,1320 @@
+{
+  "classes" : [ {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "GenTimeAccuracy",
+      "params" : [ "org.bouncycastle.asn1.tsp.Accuracy" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "GenTimeAccuracy",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getSeconds",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getMillis",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getMicros",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.GenTimeAccuracy",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TSPAlgorithms",
+    "methods" : [ ],
+    "name" : "org.bouncycastle.tsp.TSPAlgorithms",
+    "isEnum" : false,
+    "fields" : [ {
+      "isStatic" : true,
+      "name" : "MD5",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHA1",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHA224",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHA256",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHA384",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "SHA512",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "RIPEMD128",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "RIPEMD160",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "RIPEMD256",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "GOST3411",
+      "type" : "java.lang.String"
+    }, {
+      "isStatic" : true,
+      "name" : "ALLOWED",
+      "type" : "java.util.Set"
+    } ],
+    "isInterface" : true
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TSPException",
+      "params" : [ "java.lang.String", "java.lang.Exception" ]
+    }, {
+      "name" : "TSPException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Exception",
+    "simpleName" : "TSPException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getUnderlyingException",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Exception"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TSPException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TSPUtil",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TSPUtil",
+    "methods" : [ {
+      "isStatic" : true,
+      "name" : "validateCertificate",
+      "params" : [ "java.security.cert.X509Certificate" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TSPUtil",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TSPValidationException",
+      "params" : [ "java.lang.String", "int" ]
+    }, {
+      "name" : "TSPValidationException",
+      "params" : [ "java.lang.String" ]
+    } ],
+    "extends" : "org.bouncycastle.tsp.TSPException",
+    "simpleName" : "TSPValidationException",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "getFailureCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getUnderlyingException",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Exception"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintStream" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "printStackTrace",
+      "params" : [ "java.io.PrintWriter" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "fillInStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "getCause",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "initCause",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getLocalizedMessage",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getStackTrace",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.StackTraceElement[]"
+    }, {
+      "isStatic" : false,
+      "name" : "setStackTrace",
+      "params" : [ "java.lang.StackTraceElement[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addSuppressed",
+      "params" : [ "java.lang.Throwable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getSuppressed",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Throwable[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TSPValidationException",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ "java.security.cert.X509Extension" ],
+    "constructors" : [ {
+      "name" : "TimeStampRequest",
+      "params" : [ "byte[]" ]
+    }, {
+      "name" : "TimeStampRequest",
+      "params" : [ "org.bouncycastle.asn1.tsp.TimeStampReq" ]
+    }, {
+      "name" : "TimeStampRequest",
+      "params" : [ "java.io.InputStream" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampRequest",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "java.util.Set", "java.util.Set", "java.util.Set", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getVersion",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getNonce",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.math.BigInteger"
+    }, {
+      "isStatic" : false,
+      "name" : "getCriticalExtensionOIDs",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Set"
+    }, {
+      "isStatic" : false,
+      "name" : "hasUnsupportedCriticalExtension",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getNonCriticalExtensionOIDs",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Set"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessageImprintDigest",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessageImprintAlgOID",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getCertReq",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getReqPolicy",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getExtensionValue",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getEncoded",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampRequest",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimeStampRequestGenerator",
+      "params" : [ ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampRequestGenerator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "generate",
+      "params" : [ "java.lang.String", "byte[]", "java.math.BigInteger" ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.TimeStampRequest"
+    }, {
+      "isStatic" : false,
+      "name" : "generate",
+      "params" : [ "java.lang.String", "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.TimeStampRequest"
+    }, {
+      "isStatic" : false,
+      "name" : "setReqPolicy",
+      "params" : [ "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setCertReq",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addExtension",
+      "params" : [ "java.lang.String", "boolean", "byte[]" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "addExtension",
+      "params" : [ "java.lang.String", "boolean", "org.bouncycastle.asn1.ASN1Encodable" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampRequestGenerator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimeStampResponse",
+      "params" : [ "byte[]" ]
+    }, {
+      "name" : "TimeStampResponse",
+      "params" : [ "java.io.InputStream" ]
+    }, {
+      "name" : "TimeStampResponse",
+      "params" : [ "org.bouncycastle.asn1.tsp.TimeStampResp" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampResponse",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "org.bouncycastle.tsp.TimeStampRequest" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getStatus",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStampToken",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.TimeStampToken"
+    }, {
+      "isStatic" : false,
+      "name" : "getStatusString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getFailInfo",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.asn1.cmp.PKIFailureInfo"
+    }, {
+      "isStatic" : false,
+      "name" : "getEncoded",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampResponse",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimeStampResponseGenerator",
+      "params" : [ "org.bouncycastle.tsp.TimeStampTokenGenerator", "java.util.Set" ]
+    }, {
+      "name" : "TimeStampResponseGenerator",
+      "params" : [ "org.bouncycastle.tsp.TimeStampTokenGenerator", "java.util.Set", "java.util.Set", "java.util.Set" ]
+    }, {
+      "name" : "TimeStampResponseGenerator",
+      "params" : [ "org.bouncycastle.tsp.TimeStampTokenGenerator", "java.util.Set", "java.util.Set" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampResponseGenerator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "generate",
+      "params" : [ "org.bouncycastle.tsp.TimeStampRequest", "java.math.BigInteger", "java.util.Date", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.TimeStampResponse"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampResponseGenerator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimeStampToken",
+      "params" : [ "org.bouncycastle.asn1.cms.ContentInfo" ]
+    }, {
+      "name" : "TimeStampToken",
+      "params" : [ "org.bouncycastle.cms.CMSSignedData" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampToken",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "validate",
+      "params" : [ "java.security.cert.X509Certificate", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "getTimeStampInfo",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.TimeStampTokenInfo"
+    }, {
+      "isStatic" : false,
+      "name" : "toCMSSignedData",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.cms.CMSSignedData"
+    }, {
+      "isStatic" : false,
+      "name" : "getCertificatesAndCRLs",
+      "params" : [ "java.lang.String", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "java.security.cert.CertStore"
+    }, {
+      "isStatic" : false,
+      "name" : "getSignedAttributes",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.asn1.cms.AttributeTable"
+    }, {
+      "isStatic" : false,
+      "name" : "getUnsignedAttributes",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.asn1.cms.AttributeTable"
+    }, {
+      "isStatic" : false,
+      "name" : "getSID",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.cms.SignerId"
+    }, {
+      "isStatic" : false,
+      "name" : "getEncoded",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampToken",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ {
+      "name" : "TimeStampTokenGenerator",
+      "params" : [ "java.security.PrivateKey", "java.security.cert.X509Certificate", "java.lang.String", "java.lang.String", "org.bouncycastle.asn1.cms.AttributeTable", "org.bouncycastle.asn1.cms.AttributeTable" ]
+    }, {
+      "name" : "TimeStampTokenGenerator",
+      "params" : [ "java.security.PrivateKey", "java.security.cert.X509Certificate", "java.lang.String", "java.lang.String" ]
+    } ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampTokenGenerator",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "generate",
+      "params" : [ "org.bouncycastle.tsp.TimeStampRequest", "java.math.BigInteger", "java.util.Date", "java.lang.String" ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.TimeStampToken"
+    }, {
+      "isStatic" : false,
+      "name" : "setOrdering",
+      "params" : [ "boolean" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setTSA",
+      "params" : [ "org.bouncycastle.asn1.x509.GeneralName" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAccuracyMillis",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAccuracyMicros",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setAccuracySeconds",
+      "params" : [ "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "setCertificatesAndCRLs",
+      "params" : [ "java.security.cert.CertStore" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampTokenGenerator",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  }, {
+    "implements" : [ ],
+    "constructors" : [ ],
+    "extends" : "java.lang.Object",
+    "simpleName" : "TimeStampTokenInfo",
+    "methods" : [ {
+      "isStatic" : false,
+      "name" : "isOrdered",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "getPolicy",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getSerialNumber",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.math.BigInteger"
+    }, {
+      "isStatic" : false,
+      "name" : "getNonce",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.math.BigInteger"
+    }, {
+      "isStatic" : false,
+      "name" : "toTSTInfo",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.asn1.tsp.TSTInfo"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessageImprintDigest",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "getMessageImprintAlgOID",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "getGenTimeAccuracy",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.tsp.GenTimeAccuracy"
+    }, {
+      "isStatic" : false,
+      "name" : "getAccuracy",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.asn1.tsp.Accuracy"
+    }, {
+      "isStatic" : false,
+      "name" : "getGenTime",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.util.Date"
+    }, {
+      "isStatic" : false,
+      "name" : "getTsa",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "org.bouncycastle.asn1.x509.GeneralName"
+    }, {
+      "isStatic" : false,
+      "name" : "getEncoded",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "byte[]"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long", "int" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ "long" ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "wait",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "equals",
+      "params" : [ "java.lang.Object" ],
+      "isAbstract" : false,
+      "returnType" : "boolean"
+    }, {
+      "isStatic" : false,
+      "name" : "toString",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.String"
+    }, {
+      "isStatic" : false,
+      "name" : "hashCode",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "int"
+    }, {
+      "isStatic" : false,
+      "name" : "getClass",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "java.lang.Class"
+    }, {
+      "isStatic" : false,
+      "name" : "notify",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    }, {
+      "isStatic" : false,
+      "name" : "notifyAll",
+      "params" : [ ],
+      "isAbstract" : false,
+      "returnType" : "void"
+    } ],
+    "name" : "org.bouncycastle.tsp.TimeStampTokenInfo",
+    "isEnum" : false,
+    "fields" : [ ],
+    "isInterface" : false
+  } ],
+  "group" : "org.bouncycastle.tsp"
+}
